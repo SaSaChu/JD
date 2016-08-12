@@ -4,5 +4,5 @@
  */
 
 $(function () {
-
+   $('.banner').imgLiquid ({verticalAlign: 'center'});
 });

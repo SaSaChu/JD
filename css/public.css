@@ -91,3 +91,117 @@ html body {
   -ms-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
 }
+html body .outbox {
+  width: calc(100% - 20px * 2);
+  margin: 0 20px;
+}
+html body .outbox header {
+  width: 100%;
+  border-bottom: 10px solid #adc62e;
+  *zoom: 1;
+}
+html body .outbox header:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+html body .outbox header .hl, html body .outbox header .hr {
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+html body .outbox header .hr {
+  float: right;
+}
+html body .outbox header .hl {
+  width: 15%;
+}
+html body .outbox header .hr {
+  width: calc(100% - 15%);
+}
+html body .outbox header .hl {
+  background-color: rgba(0, 0, 255, 0.2);
+}
+html body .outbox header .hl a {
+  display: inline-block;
+  width: 310px;
+  height: 125px;
+  border: 0;
+  cursor: pointer;
+}
+html body .outbox header .hl a h1 {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999px;
+  background-image: url(../img/biglogo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+html body .outbox .middle {
+  width: 100%;
+}
+html body .outbox .middle .banner {
+  width: 100%;
+  height: 500px;
+}
+html body .outbox .middle .banner img {
+  max-width: 100%;
+  height: auto;
+}
+html body .outbox .middle .feature {
+  width: 100%;
+  margin: 15px 0;
+  padding: 25px 15px;
+  background-image: url(../img/green.png);
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-color: #faf8f9;
+}
+html body .outbox .middle .feature p {
+  line-height: 1.4em;
+  margin: 15px 0;
+  color: #313940;
+}
+html body .outbox .middle .feature p.f01 {
+  font-size: 2em;
+  font-weight: bolder;
+}
+html body .outbox .middle .feature i a {
+  cursor: pointer;
+  color: #313940;
+  text-decoration: underline;
+}
+html body .outbox .middle .feature i a:hover {
+  color: #fbfbfb;
+}
+html body .outbox .middle .services {
+  width: 100%;
+  *zoom: 1;
+}
+html body .outbox .middle .services:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+html body .outbox .middle .services > div {
+  float: left;
+  width: calc(100% / 3 - 30px / 3);
+  height: 335px;
+  border: 2px solid #929697;
+}
+html body .outbox .middle .services > div:nth-child(3n + 2) {
+  margin: 0 15px;
+}
+html body .outbox footer {
+  display: inline-block;
+  width: 100%;
+}
+html body .outbox footer p {
+  margin: 0;
+  padding: 25px 0;
+  color: #949494;
+  text-align: left;
+}
