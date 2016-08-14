@@ -80,7 +80,21 @@ html {
 
         }
 
-        .hr { }
+        .hr {
+          @include clearfix();
+
+          .click {
+            display: inline-block;
+            padding: 0 15px;
+            float: right;
+            color: rgba(130, 130, 130, 1.00);
+            text-decoration: none;
+
+            &:hover {
+              color: rgba(184, 203, 65, 1.00);
+            }
+          }
+        }
 
       }
 
@@ -153,7 +167,6 @@ html {
       }
 
       footer {
-        display: inline-block;
         width: 100%;
 
         p {

@@ -139,6 +139,25 @@ html body .outbox header .hl a h1 {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
+html body .outbox header .hr {
+  *zoom: 1;
+}
+html body .outbox header .hr:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+html body .outbox header .hr .click {
+  display: inline-block;
+  padding: 0 15px;
+  float: right;
+  color: #828282;
+  text-decoration: none;
+}
+html body .outbox header .hr .click:hover {
+  color: #b8cb41;
+}
 html body .outbox .middle {
   width: 100%;
 }
@@ -196,7 +215,6 @@ html body .outbox .middle .services > div:nth-child(3n + 2) {
   margin: 0 15px;
 }
 html body .outbox footer {
-  display: inline-block;
   width: 100%;
 }
 html body .outbox footer p {
