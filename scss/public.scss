@@ -98,16 +98,20 @@ html {
 
           .click {
             display: inline-block;
-            margin: 50px 0;
-            padding: 0 15px;
+            margin-top: 50px;
+            padding-left: 15px;
             float: right;
+            cursor: pointer;
 
             color: rgba(130, 130, 130, 1.00);
             text-decoration: none;
 
             position: relative;
 
+            @include clearfix();
+
             &:before {
+              float: left;
               font-size: 1.3em;
               font-weight: bolder;
               padding-right: 10px;
@@ -117,6 +121,50 @@ html {
             &:hover {
               color: rgba(184, 203, 65, 1.00);
             }
+
+            p {
+              float: left;
+              margin: 0;
+              display: inline-block;
+            }
+
+            .list {
+              display: none;
+            }
+
+            &:hover {
+              p {
+                color: rgba(184, 203, 65, 1.00);
+
+                a {
+                  color: rgba(57, 65, 70, 1.00);
+                }
+              }
+
+              .list {
+                display: inline-block;;
+                z-index: 22;
+
+                position: absolute;
+                right: 0;
+                top:20px;
+
+                > a {
+                  display: inline-block;
+                  padding: 10px 2px;
+
+                  color: rgba(57, 65, 70, 1.00);
+                  text-decoration: none;
+
+                  border-top: 2px solid white;
+
+                  &:hover {
+                    color: rgba(184, 203, 65, 1.00);
+                  }
+                }
+              }
+            }
+
 
           }
         }

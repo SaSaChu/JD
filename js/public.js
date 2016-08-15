@@ -7,8 +7,12 @@ $(function () {
    $('.banner, .spb').imgLiquid ({verticalAlign: 'center'});
 
    $('.navboxout, #navbox .x').click(function() {
-    $('#navbox').toggleClass('sn');
+    $('#navbox').toggleClass('sn');
      $('#cover').toggleClass('show');
+   })
+
+   $('.openlang').click(function() {
+     $('.lang').toggleClass('langshow');
    })
 });
 

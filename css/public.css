@@ -179,20 +179,60 @@ html body .outbox header .hr:after {
 }
 html body .outbox header .hr .click {
   display: inline-block;
-  margin: 50px 0;
-  padding: 0 15px;
+  margin-top: 50px;
+  padding-left: 15px;
   float: right;
+  cursor: pointer;
   color: #828282;
   text-decoration: none;
   position: relative;
+  *zoom: 1;
+}
+html body .outbox header .hr .click:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
 }
 html body .outbox header .hr .click:before {
+  float: left;
   font-size: 1.3em;
   font-weight: bolder;
   padding-right: 10px;
   color: #b8cb41;
 }
 html body .outbox header .hr .click:hover {
+  color: #b8cb41;
+}
+html body .outbox header .hr .click p {
+  float: left;
+  margin: 0;
+  display: inline-block;
+}
+html body .outbox header .hr .click .list {
+  display: none;
+}
+html body .outbox header .hr .click:hover p {
+  color: #b8cb41;
+}
+html body .outbox header .hr .click:hover p a {
+  color: #394146;
+}
+html body .outbox header .hr .click:hover .list {
+  display: inline-block;
+  z-index: 22;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+html body .outbox header .hr .click:hover .list > a {
+  display: inline-block;
+  padding: 10px 2px;
+  color: #394146;
+  text-decoration: none;
+  border-top: 2px solid white;
+}
+html body .outbox header .hr .click:hover .list > a:hover {
   color: #b8cb41;
 }
 html body .outbox #navbox {
