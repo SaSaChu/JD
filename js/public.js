@@ -4,5 +4,11 @@
  */
 
 $(function () {
-   $('.banner').imgLiquid ({verticalAlign: 'center'});
+   $('.banner, .spb').imgLiquid ({verticalAlign: 'center'});
+
+   $('.navboxout, #navbox .x').click(function() {
+    $('#navbox').toggleClass('sn');
+     $('#cover').toggleClass('show');
+   })
 });
+
