@@ -4,7 +4,7 @@
  */
 
 $(function () {
-   $('.banner, .spb').imgLiquid ({verticalAlign: 'center'});
+   $('.banner, .spb, .peopimg').imgLiquid ({verticalAlign: 'center'});
 
    $('.navboxout, #navbox .x').click(function() {
     $('#navbox').toggleClass('sn');

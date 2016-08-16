@@ -349,30 +349,6 @@ html body .outbox .middle .blackbg .middletitle {
   font-size: 1.2em;
   font-weight: bolder;
 }
-html body .outbox .middle .blackbg .whitebox {
-  display: inline-block;
-  width: 80%;
-  border: 1px solid white;
-  padding-bottom: 80px;
-}
-html body .outbox .middle .blackbg .whitebox .wbt {
-  display: inline-block;
-  width: 100%;
-  margin: 0;
-  padding-top: 80px;
-  color: white;
-  font-size: 2em;
-  font-weight: bolder;
-}
-html body .outbox .middle .blackbg .whitebox .wbc {
-  display: inline-block;
-  width: 80%;
-  margin: 0;
-  padding-top: 30px;
-  color: white;
-  font-size: 1em;
-  line-height: 1.6em;
-}
 html body .outbox .middle .banner {
   width: 100%;
   height: 500px;

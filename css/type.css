@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+@font-face {
+  font-family: "Monaco";
+  src: url('/JD/font/monaco/monaco.ttf?1470839577') format('truetype'), url('/JD/font/monaco/monaco.otf?1470839577') format('opentype');
+}
+@font-face {
+  font-family: "icomoon";
+  src: url('/JD/font/icomoon/icomoon.eot?1471246134') format('embedded-opentype'), url('/JD/font/icomoon/icomoon.woff?1471246134') format('woff'), url('/JD/font/icomoon/icomoon.ttf?1471246134') format('truetype'), url('/JD/font/icomoon/icomoon.svg?1471246134') format('svg');
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon', Monaco, "微軟正黑體", "Microsoft JhengHei";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -moz-osx-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
+
+.icon-dehaze:before {
+  content: "\e3c7";
+}
+
+.icon-language:before {
+  content: "\e894";
+}
+
+.icon-forbid:before {
+  content: "\e900";
+}
+
+.icon-twitter-with-circle:before {
+  content: "\e904";
+}
+
+.icon-facebook-with-circle:before {
+  content: "\e902";
+}
+
+.icon-google-with-circle:before {
+  content: "\e901";
+}
+
+.icon-linkedin-with-circle:before {
+  content: "\e903";
+}
+
+*, *:after, *:before {
+  vertical-align: top;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
+*::-moz-selection, *:after::-moz-selection, *:before::-moz-selection {
+  color: white;
+  background-color: #96c8ff;
+}
+*::selection, *:after::selection, *:before::selection {
+  color: white;
+  background-color: #96c8ff;
+}
+
+html {
+  height: 100%;
+}
+html body {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: medium;
+  font-family: "Roboto", "微軟正黑體", Monaco, "Microsoft JhengHei";
+  background-color: white;
+  color: rgba(50, 50, 50, 0.8);
+  overflow: hidden;
+  overflow-y: scroll;
+  -moz-osx-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
+html body .whitebox {
+  display: inline-block;
+  width: 80%;
+  border: 1px solid white;
+  padding-bottom: 80px;
+}
+html body .whitebox .wbt {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding-top: 80px;
+  color: white;
+  font-size: 2em;
+  font-weight: bolder;
+}
+html body .whitebox .wbc {
+  display: inline-block;
+  width: 80%;
+  margin: 0;
+  padding-top: 30px;
+  color: white;
+  font-size: 1em;
+  line-height: 1.6em;
+}
+html body .biggreen {
+  display: inline-block;
+  width: 80%;
+  font-size: 3.8em;
+  font-weight: bolder;
+  line-height: 1.4em;
+  color: #aec52c;
+}
+html body .centbox {
+  display: inline-block;
+  width: 80%;
+  padding: 40px 0 80px 0;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  *zoom: 1;
+}
+html body .centbox:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+html body .centbox .peopbox {
+  display: inline-block;
+  width: calc(50% - 10px);
+  border: 1px solid white;
+  margin: 0 5px;
+  padding: 25px;
+}
+html body .centbox .peopbox .peopimg {
+  display: inline-block;
+  width: 100%;
+  height: 350px;
+}
+html body .centbox .peopbox .peopimg img {
+  max-width: 100%;
+  height: 100%;
+}
+html body .centbox .peopbox .name, html body .centbox .peopbox .jobtitle, html body .centbox .peopbox .present {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: left;
+}
+html body .centbox .peopbox .name {
+  font-size: 1.8em;
+  font-weight: bolder;
+  padding: 10px 0;
+}
+html body .centbox .peopbox .jobtitle {
+  font-size: 1.4em;
+}
+html body .centbox .peopbox .present {
+  font-size: 1em;
+  line-height: 1.6em;
+  padding-top: 30px;
+}
+html body .centbox .peopbox:first-child {
+  float: left;
+}
+html body .centbox .peopbox:last-child {
+  float: right;
+}
+html body .centbox > div {
+  float: left;
+  margin: 0 10px;
+  display: inline-block;
+  width: calc(25% - 20px);
+  height: 100px;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+}
