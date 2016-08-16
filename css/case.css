@@ -1,0 +1,103 @@
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+.centbox.npadding {
+  padding: 0;
+}
+.centbox .serviceboxs {
+  display: inline-block;
+  width: 80%;
+  border: 1px solid white;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.centbox .serviceboxs .case_detail {
+  display: inline-block;
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/305195807.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  -moz-background-size: cover;
+  cursor: pointer;
+}
+.centbox .serviceboxs .case_detail.C .case_a01, .centbox .serviceboxs .case_detail.C .case_a02, .centbox .serviceboxs .case_detail.C .case_a03 {
+  display: inline-block;
+  background-color: rgba(25, 33, 34, 0.8);
+}
+.centbox .serviceboxs .case_detail.D .case_a01, .centbox .serviceboxs .case_detail.D .case_a02, .centbox .serviceboxs .case_detail.D .case_a03 {
+  display: none;
+}
+.centbox .serviceboxs .case_detail .case_a01, .centbox .serviceboxs .case_detail .case_a03 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  font-size: 3em;
+}
+.centbox .serviceboxs .case_detail .case_a01:hover, .centbox .serviceboxs .case_detail .case_a03:hover {
+  color: #afc62c;
+}
+.centbox .serviceboxs .case_detail .case_a01 {
+  font-weight: bolder;
+  padding: 30px 0;
+}
+.centbox .serviceboxs .case_detail .case_a01:hover {
+  text-decoration: underline;
+}
+.centbox .serviceboxs .case_detail .case_a02 {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  color: white;
+  line-height: 1.4em;
+}

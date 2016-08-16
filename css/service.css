@@ -1,0 +1,206 @@
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+.servicetopbox {
+  display: inline-block;
+  width: 100%;
+  padding: 50px 0;
+  background-image: url(../img/green.png);
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-color: #faf8f9;
+}
+.servicetopbox .s_topbigtitle, .servicetopbox .s_topinfo {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  color: #313846;
+  font-size: 1em;
+}
+.servicetopbox .s_topbigtitle {
+  font-size: 2em;
+  font-weight: bolder;
+  padding: 20px;
+}
+.servicetopbox .s_topinfo {
+  line-height: 2em;
+}
+
+.centbox.npadding {
+  padding: 0;
+}
+.centbox .serviceboxs {
+  display: inline-block;
+  width: 80%;
+  border: 1px solid white;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.centbox .serviceboxs .sc_detail.A .sc_a01, .centbox .serviceboxs .sc_detail.A .sc_a02, .centbox .serviceboxs .sc_detail.A .sc_a03 {
+  display: inline-block;
+}
+.centbox .serviceboxs .sc_detail.A .sc_b01, .centbox .serviceboxs .sc_detail.A .sc_b02, .centbox .serviceboxs .sc_detail.A .sc_b03, .centbox .serviceboxs .sc_detail.A .sc_b04 {
+  display: none;
+}
+.centbox .serviceboxs .sc_detail.B .sc_a01, .centbox .serviceboxs .sc_detail.B .sc_a02, .centbox .serviceboxs .sc_detail.B .sc_a03 {
+  display: none;
+}
+.centbox .serviceboxs .sc_detail.B .sc_b01, .centbox .serviceboxs .sc_detail.B .sc_b02, .centbox .serviceboxs .sc_detail.B .sc_b03, .centbox .serviceboxs .sc_detail.B .sc_b04 {
+  display: inline-block;
+}
+.centbox .serviceboxs .sc_detail .sc_a01, .centbox .serviceboxs .sc_detail .sc_a03 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  font-size: 3em;
+}
+.centbox .serviceboxs .sc_detail .sc_a01:hover, .centbox .serviceboxs .sc_detail .sc_a03:hover {
+  color: #afc62c;
+}
+.centbox .serviceboxs .sc_detail .sc_a01 {
+  font-weight: bolder;
+  padding: 30px 0;
+}
+.centbox .serviceboxs .sc_detail .sc_a01:hover {
+  text-decoration: underline;
+}
+.centbox .serviceboxs .sc_detail .sc_a02 {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  color: white;
+  line-height: 1.4em;
+}
+.centbox .serviceboxs .sc_detail .sc_b01, .centbox .serviceboxs .sc_detail .sc_b02, .centbox .serviceboxs .sc_detail .sc_b04 {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.centbox .serviceboxs .sc_detail .sc_b01 {
+  padding-bottom: 30px;
+  color: #afc62c;
+  font-weight: bolder;
+  font-size: 3em;
+}
+.centbox .serviceboxs .sc_detail .sc_b02 {
+  padding-bottom: 35px;
+  color: white;
+  line-height: 1.4em;
+}
+.centbox .serviceboxs .sc_detail .sc_b03 {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  *zoom: 1;
+}
+.centbox .serviceboxs .sc_detail .sc_b03:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+.centbox .serviceboxs .sc_detail .sc_b03 .sc_cel, .centbox .serviceboxs .sc_detail .sc_b03 .sc_cer {
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+.centbox .serviceboxs .sc_detail .sc_b03 .sc_cer {
+  float: right;
+}
+.centbox .serviceboxs .sc_detail .sc_b03 .sc_cel {
+  width: 50%;
+}
+.centbox .serviceboxs .sc_detail .sc_b03 .sc_cer {
+  width: calc(100% - 50%);
+}
+.centbox .serviceboxs .sc_detail .sc_b03 .sc_cel {
+  float: left;
+  height: 270px;
+}
+.centbox .serviceboxs .sc_detail .sc_b03 .sc_cel img {
+  max-width: 100%;
+  height: 100%;
+}
+.centbox .serviceboxs .sc_detail .sc_b03 .sc_cer {
+  float: left;
+  padding-left: 30px;
+}
+.centbox .serviceboxs .sc_detail .sc_b03 .sc_cer .sc_g, .centbox .serviceboxs .sc_detail .sc_b03 .sc_cer .sc_w {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.centbox .serviceboxs .sc_detail .sc_b03 .sc_cer .sc_g {
+  padding-bottom: 15px;
+  font-size: 1em;
+  font-weight: bolder;
+  color: #a3c014;
+}
+.centbox .serviceboxs .sc_detail .sc_b03 .sc_cer .sc_w {
+  color: white;
+  line-height: 2em;
+  font-size: .9em;
+}
+.centbox .serviceboxs .sc_detail .sc_b04 {
+  padding-bottom: 30px;
+  cursor: pointer;
+  color: white;
+  font-weight: bolder;
+  font-size: 3em;
+}
+.centbox .serviceboxs .sc_detail .sc_b04:hover {
+  color: #afc62c;
+}

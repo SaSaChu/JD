@@ -1,0 +1,189 @@
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+
+@import "_oa";
+
+
+
+
+.centbox {
+
+  &.npadding {
+    padding: 0;
+  }
+
+  // service
+  .serviceboxs {
+    display: inline-block;
+    width: 80%;
+    border: 1px solid white;
+    padding: 30px;
+    margin-bottom: 30px;
+
+    .case_detail {
+      display: inline-block;
+      width: 100%;
+      height: 300px;
+      background-image: url(../img/305195807.jpg);
+      background-position: 50% 50%;
+      background-size: cover;
+      -moz-background-size: cover;
+
+      cursor: pointer;
+
+
+
+      &.C {
+        .case_a01, .case_a02, .case_a03 {
+          display: inline-block;
+          background-color: rgba(25, 33, 34, .8);
+        }
+
+        // .case_b01, .case_b02, .case_b03, .case_b04 {
+        //   display: none;
+        // }
+      }
+
+      &.D {
+        .case_a01, .case_a02, .case_a03 {
+          display: none;
+        }
+
+        // .case_b01, .case_b02, .case_b03, .case_b04 {
+        //   display: inline-block;
+        // }
+      }
+
+
+      .case_a01, .case_a03 {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        color: white;
+        cursor: pointer;
+        font-size: 3em;
+
+        &:hover {
+          color: rgba(175, 198, 44, 1.00);
+        }
+      }
+
+      .case_a01 {
+        font-weight: bolder;
+        padding: 30px 0;
+
+         &:hover {
+          text-decoration: underline;
+         }
+      }
+
+      .case_a02 {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 20px;
+        color: white;
+        line-height: 1.4em;
+      }
+
+
+
+      // .case_b01, .case_b02, .case_b04 {
+      //   display: inline-block;
+      //   width: 100%;
+      //   margin: 0;
+      //   padding: 0;
+      // }
+
+      // .case_b01 {
+      //   padding-bottom: 30px;
+      //   color: rgba(175, 198, 44, 1.00);
+      //   font-weight: bolder;
+      //   font-size: 3em;
+      // }
+
+      // .case_b02 {
+      //   padding-bottom: 35px;
+      //   color: white;
+      //   line-height: 1.4em;
+      // }
+
+      // .case_b03 {
+      //   display: inline-block;
+      //   width: 100%;
+      //   margin-bottom: 20px;
+
+      //   @include split-left(50%, '.case_cel', '.case_cer');
+
+      //   .case_cel {
+      //     float: left;
+      //     height: 270px;
+
+      //     img {
+      //       max-width: 100%;
+      //       height: 100%;
+      //     }
+      //   }
+
+      //   .case_cer {
+      //     float: left;
+      //     padding-left: 30px;
+
+      //     .case_g, .case_w {
+      //       display: inline-block;
+      //       width: 100%;
+      //       text-align: left;
+      //       margin: 0;
+      //       padding: 0;
+      //     }
+
+      //     .case_g {
+      //       padding-bottom: 15px;
+      //       font-size: 1em;
+      //       font-weight: bolder;
+      //       color: rgba(163, 192, 20, 1.00);
+      //     }
+      //     .case_w {
+      //       color: white;
+      //       line-height: 2em;
+      //       font-size: .9em;
+      //     }
+      //   }
+
+      // }
+
+      // .sc_b04 {
+      //   padding-bottom: 30px;
+      //   cursor: pointer;
+      //   color: white;
+      //   font-weight: bolder;
+      //   font-size: 3em;
+
+      //   &:hover {
+      //     color: rgba(175, 198, 44, 1.00);
+      //   }
+      // }
+
+
+    }
+
+
+  }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,7 +4,7 @@
  */
 
 $(function () {
-   $('.banner, .spb, .peopimg').imgLiquid ({verticalAlign: 'center'});
+   $('.banner, .spb, .peopimg, .sc_cel').imgLiquid ({verticalAlign: 'center'});
 
 
    $('.navboxout, #navbox .x').click(function() {
@@ -27,6 +27,30 @@ $(function () {
    });
 
    $('.ba').eq (0).click();
+
+
+   $('.sc_detail .sc_a03, .sc_detail .sc_a01, .sc_detail .sc_b04').click(function () {
+    if ($(this).parent().hasClass('A')) {
+      $(this).parent().removeClass('A');
+      $(this).parent().addClass('B');
+    }
+    else  {
+      $(this).parent().removeClass('B');
+      $(this).parent().addClass('A');
+    }
+   })
+
+
+
+  $('.case_detail').hover(function(){
+    $(this).removeClass('D');
+    $(this).addClass('C');
+  }, function(){
+   $(this).removeClass('C');
+   $(this).addClass('D');
+  });
+
+
 
 });
 

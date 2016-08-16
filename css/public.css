@@ -218,10 +218,10 @@ html body .outbox header .hr .click:before {
   font-size: 1.3em;
   font-weight: bolder;
   padding-right: 10px;
-  color: #b8cb41;
+  color: #a3c014;
 }
 html body .outbox header .hr .click:hover {
-  color: #b8cb41;
+  color: #a3c014;
 }
 html body .outbox header .hr .click p {
   float: left;
@@ -232,7 +232,7 @@ html body .outbox header .hr .click .list {
   display: none;
 }
 html body .outbox header .hr .click:hover p {
-  color: #b8cb41;
+  color: #a3c014;
 }
 html body .outbox header .hr .click:hover p a {
   color: #394146;
@@ -252,7 +252,7 @@ html body .outbox header .hr .click:hover .list > a {
   border-top: 2px solid white;
 }
 html body .outbox header .hr .click:hover .list > a:hover {
-  color: #b8cb41;
+  color: #a3c014;
 }
 html body .outbox #navbox {
   position: absolute;
@@ -281,19 +281,19 @@ html body .outbox #navbox .x {
 html body .outbox #navbox .x:before {
   display: inline-block;
   text-decoration: none;
-  color: #b8cb41;
+  color: #a3c014;
   padding-right: 8px;
   font-size: 1.3em;
 }
 html body .outbox #navbox .x:hover {
   text-decoration: underline;
-  color: #b8cb41;
+  color: #a3c014;
 }
 html body .outbox #navbox .ncg {
   display: inline-block;
   width: 100%;
   padding: 10px 20px;
-  background-color: #b8cb41;
+  background-color: #a3c014;
   text-align: left;
   color: #3a4346;
   font-weight: bolder;
@@ -303,14 +303,14 @@ html body .outbox #navbox .ncw {
   width: 100%;
   padding: 20px 20px;
   cursor: pointer;
-  border-bottom: 1px solid #b8cb41;
+  border-bottom: 1px solid #a3c014;
   text-align: left;
   text-decoration: none;
   color: #3a4346;
 }
 html body .outbox #navbox .ncw:hover {
   text-decoration: underline;
-  color: #b8cb41;
+  color: #a3c014;
 }
 html body .outbox #cover {
   display: inline-block;

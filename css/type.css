@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
  * @author      ZEUS Design - http://www.zeusdesign.com.tw
  * @copyright   Copyright (c) 2016 ZEUS Design
@@ -47,105 +46,13 @@
  * @author      ZEUS Design - http://www.zeusdesign.com.tw
  * @copyright   Copyright (c) 2016 ZEUS Design
  */
-@font-face {
-  font-family: "Monaco";
-  src: url('/JD/font/monaco/monaco.ttf?1470839577') format('truetype'), url('/JD/font/monaco/monaco.otf?1470839577') format('opentype');
-}
-@font-face {
-  font-family: "icomoon";
-  src: url('/JD/font/icomoon/icomoon.eot?1471246134') format('embedded-opentype'), url('/JD/font/icomoon/icomoon.woff?1471246134') format('woff'), url('/JD/font/icomoon/icomoon.ttf?1471246134') format('truetype'), url('/JD/font/icomoon/icomoon.svg?1471246134') format('svg');
-}
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon', Monaco, "微軟正黑體", "Microsoft JhengHei";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -moz-osx-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-}
-
-.icon-dehaze:before {
-  content: "\e3c7";
-}
-
-.icon-language:before {
-  content: "\e894";
-}
-
-.icon-forbid:before {
-  content: "\e900";
-}
-
-.icon-twitter-with-circle:before {
-  content: "\e904";
-}
-
-.icon-facebook-with-circle:before {
-  content: "\e902";
-}
-
-.icon-google-with-circle:before {
-  content: "\e901";
-}
-
-.icon-linkedin-with-circle:before {
-  content: "\e903";
-}
-
-*, *:after, *:before {
-  vertical-align: top;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -moz-osx-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-}
-*::-moz-selection, *:after::-moz-selection, *:before::-moz-selection {
-  color: white;
-  background-color: #96c8ff;
-}
-*::selection, *:after::selection, *:before::selection {
-  color: white;
-  background-color: #96c8ff;
-}
-
-html {
-  height: 100%;
-}
-html body {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  margin: 0;
-  width: 100%;
-  font-size: medium;
-  font-family: "Roboto", "微軟正黑體", Monaco, "Microsoft JhengHei";
-  background-color: white;
-  color: rgba(50, 50, 50, 0.8);
-  overflow: hidden;
-  overflow-y: scroll;
-  -moz-osx-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-}
-html body .whitebox {
+.whitebox {
   display: inline-block;
   width: 80%;
   border: 1px solid white;
   padding-bottom: 80px;
 }
-html body .whitebox .wbt {
+.whitebox .wbt {
   display: inline-block;
   width: 100%;
   margin: 0;
@@ -154,7 +61,7 @@ html body .whitebox .wbt {
   font-size: 2em;
   font-weight: bolder;
 }
-html body .whitebox .wbc {
+.whitebox .wbc {
   display: inline-block;
   width: 80%;
   margin: 0;
@@ -163,39 +70,42 @@ html body .whitebox .wbc {
   font-size: 1em;
   line-height: 1.6em;
 }
-html body .biggreen {
+
+.biggreen {
   display: inline-block;
   width: 80%;
   font-size: 3.8em;
   font-weight: bolder;
   line-height: 1.4em;
-  color: #aec52c;
+  color: #a3c014;
 }
-html body .buttombox {
+
+.buttombox {
   display: inline-block;
   width: 50%;
 }
-html body .buttombox .ba {
+.buttombox .ba {
   display: inline-block;
   padding: 10px 15px;
   margin: 0 10px;
   background-color: #3a4245;
   cursor: pointer;
-  color: #b8cb41;
+  color: #a3c014;
   text-decoration: none;
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
   border-radius: 30px;
 }
-html body .buttombox .ba:hover {
+.buttombox .ba:hover {
   color: #3a4245;
-  background-color: #b8cb41;
+  background-color: #a3c014;
 }
-html body .buttombox .ba.h {
+.buttombox .ba.h {
   color: #3a4245;
-  background-color: #b8cb41;
+  background-color: #a3c014;
 }
-html body .info {
+
+.info {
   display: inline-block;
   width: 80%;
   margin: 0;
@@ -204,57 +114,31 @@ html body .info {
   font-size: 1.1em;
   line-height: 3em;
 }
-html body .info .infolink {
+.info .infolink {
   display: inline-block;
   cursor: pointer;
   color: white;
   text-align: left;
   text-decoration: underline;
 }
-html body .info .infolink:hover {
+.info .infolink:hover {
   color: #afc62c;
   text-decoration: underline;
 }
-html body .servicetopbox {
-  display: inline-block;
-  width: 100%;
-  padding: 50px 0;
-  background-image: url(../img/green.png);
-  background-repeat: repeat-y;
-  background-size: 100% auto;
-  background-color: #faf8f9;
-}
-html body .servicetopbox .s_topbigtitle, html body .servicetopbox .s_topinfo {
-  display: inline-block;
-  width: 100%;
-  margin: 0;
-  color: #313846;
-  font-size: 1em;
-}
-html body .servicetopbox .s_topbigtitle {
-  font-size: 2em;
-  font-weight: bolder;
-  padding: 20px;
-}
-html body .servicetopbox .s_topinfo {
-  line-height: 2em;
-}
-html body .centbox {
+
+.centbox {
   display: inline-block;
   width: 80%;
   padding: 40px 0 80px 0;
   *zoom: 1;
 }
-html body .centbox.npadding {
-  padding: 0;
-}
-html body .centbox:after {
+.centbox:after {
   display: table;
   content: "";
   line-height: 0;
   clear: both;
 }
-html body .centbox .peopbox {
+.centbox .peopbox {
   float: left;
   display: inline-block;
   width: calc(50% - 10px);
@@ -262,16 +146,16 @@ html body .centbox .peopbox {
   margin: 0 5px;
   padding: 25px;
 }
-html body .centbox .peopbox .peopimg {
+.centbox .peopbox .peopimg {
   display: inline-block;
   width: 100%;
   height: 350px;
 }
-html body .centbox .peopbox .peopimg img {
+.centbox .peopbox .peopimg img {
   max-width: 100%;
   height: 100%;
 }
-html body .centbox .peopbox .name, html body .centbox .peopbox .jobtitle, html body .centbox .peopbox .present {
+.centbox .peopbox .name, .centbox .peopbox .jobtitle, .centbox .peopbox .present {
   display: inline-block;
   width: 100%;
   margin: 0;
@@ -279,32 +163,32 @@ html body .centbox .peopbox .name, html body .centbox .peopbox .jobtitle, html b
   color: white;
   text-align: left;
 }
-html body .centbox .peopbox .name {
+.centbox .peopbox .name {
   font-size: 1.8em;
   font-weight: bolder;
   padding: 10px 0;
 }
-html body .centbox .peopbox .jobtitle {
+.centbox .peopbox .jobtitle {
   font-size: 1.4em;
 }
-html body .centbox .peopbox .present {
+.centbox .peopbox .present {
   font-size: 1em;
   line-height: 1.6em;
   padding-top: 30px;
 }
-html body .centbox .peopbox:first-child {
+.centbox .peopbox:first-child {
   float: left;
 }
-html body .centbox .peopbox:last-child {
+.centbox .peopbox:last-child {
   float: right;
 }
-html body .centbox .listbox {
+.centbox .listbox {
   display: inline-block;
   float: left;
   margin: 0 10px 80px 10px;
   width: calc(25% - 20px);
 }
-html body .centbox .listbox .logobox {
+.centbox .listbox .logobox {
   display: inline-block;
   width: 100%;
   height: 200px;
@@ -312,30 +196,30 @@ html body .centbox .listbox .logobox {
   margin-bottom: 40px;
   border: 1px solid white;
 }
-html body .centbox .listbox .logobox .logopic {
+.centbox .listbox .logobox .logopic {
   width: 100%;
   height: 100%;
   background-color: white;
 }
-html body .centbox .listbox .logobox .logopic img {
+.centbox .listbox .logobox .logopic img {
   max-width: 100%;
   height: 100%;
 }
-html body .centbox .listbox .cn {
+.centbox .listbox .cn {
   display: inline-block;
   width: 100%;
   padding: 10px 0;
   font-size: 1.2em;
-  color: #aac12b;
+  color: #a3c014;
 }
-html body .centbox .listbox .cp {
+.centbox .listbox .cp {
   display: inline-block;
   width: 100%;
   font-size: .9em;
   color: white;
   line-height: 1.4em;
 }
-html body .centbox .partnersbox {
+.centbox .partnersbox {
   display: inline-block;
   width: 100%;
   margin-top: 50px;
@@ -344,53 +228,53 @@ html body .centbox .partnersbox {
   *zoom: 1;
   display: none;
 }
-html body .centbox .partnersbox:after {
+.centbox .partnersbox:after {
   display: table;
   content: "";
   line-height: 0;
   clear: both;
 }
-html body .centbox .partnersbox .pal, html body .centbox .partnersbox .par {
+.centbox .partnersbox .pal, .centbox .partnersbox .par {
   float: left;
   position: relative;
   display: inline-block;
 }
-html body .centbox .partnersbox .par {
+.centbox .partnersbox .par {
   float: right;
 }
-html body .centbox .partnersbox .pal {
+.centbox .partnersbox .pal {
   width: 40%;
 }
-html body .centbox .partnersbox .par {
+.centbox .partnersbox .par {
   width: calc(100% - 40%);
 }
-html body .centbox .partnersbox.partnershow {
+.centbox .partnersbox.partnershow {
   display: inline-block;
 }
-html body .centbox .partnersbox .pal {
+.centbox .partnersbox .pal {
   display: inline-block;
   float: left;
   height: 375px;
   background-color: white;
 }
-html body .centbox .partnersbox .pal img {
+.centbox .partnersbox .pal img {
   max-width: 100%;
   height: 100%;
 }
-html body .centbox .partnersbox .par {
+.centbox .partnersbox .par {
   display: inline-block;
   float: left;
   padding-left: 30px;
 }
-html body .centbox .partnersbox .par .pag01, html body .centbox .partnersbox .par .pag02 {
+.centbox .partnersbox .par .pag01, .centbox .partnersbox .par .pag02 {
   display: inline-block;
   width: 100%;
   margin: 0;
   padding: 20px 0;
-  color: #afc52c;
+  color: #a3c014;
   text-align: left;
 }
-html body .centbox .partnersbox .par .paw01, html body .centbox .partnersbox .par .paw02, html body .centbox .partnersbox .par .paw03 {
+.centbox .partnersbox .par .paw01, .centbox .partnersbox .par .paw02, .centbox .partnersbox .par .paw03 {
   display: inline-block;
   width: 100%;
   margin: 0;
@@ -400,44 +284,44 @@ html body .centbox .partnersbox .par .paw01, html body .centbox .partnersbox .pa
   color: white;
   text-align: left;
 }
-html body .centbox .partnersbox .par .pag01 {
+.centbox .partnersbox .par .pag01 {
   font-size: 2em;
 }
-html body .centbox .partnersbox .par .paw01 {
+.centbox .partnersbox .par .paw01 {
   font-size: 1em;
   line-height: 1.6em;
 }
-html body .centbox .partnersbox .par .pag02 {
+.centbox .partnersbox .par .pag02 {
   font-size: 1.4em;
   font-weight: bolder;
 }
-html body .centbox .partnersbox .par .paw03 {
+.centbox .partnersbox .par .paw03 {
   padding-top: 20px;
   cursor: pointer;
   text-decoration: none;
   font-style: italic;
 }
-html body .centbox .partnersbox .par .paw03:hover {
+.centbox .partnersbox .par .paw03:hover {
   text-decoration: underline;
 }
-html body .centbox .cgtype {
+.centbox .cgtype {
   display: inline-block;
   width: 50%;
   padding: 10px 0;
-  color: #b8cb41;
+  color: #a3c014;
 }
-html body .centbox .cgtype.biggreen {
+.centbox .cgtype.biggreen {
   font-size: 1.6em;
   font-weight: bolder;
 }
-html body .centbox .contactbox {
+.centbox .contactbox {
   display: inline-block;
   width: 80%;
   margin-top: 30px;
   border: 1px solid white;
   padding: 20px;
 }
-html body .centbox .contactbox .inputbox, html body .centbox .contactbox .inputbox02 {
+.centbox .contactbox .inputbox, .centbox .contactbox .inputbox02 {
   display: inline-block;
   width: 100%;
   padding: 15px;
@@ -446,18 +330,18 @@ html body .centbox .contactbox .inputbox, html body .centbox .contactbox .inputb
   font-size: 1em;
   color: #32393c;
 }
-html body .centbox .contactbox .inputbox {
+.centbox .contactbox .inputbox {
   margin-bottom: 20px;
 }
-html body .centbox .contactbox .inputbox02 {
+.centbox .contactbox .inputbox02 {
   min-height: 300px;
 }
-html body .centbox .sendbox {
+.centbox .sendbox {
   display: inline-block;
   width: 100%;
   margin-top: 30px;
 }
-html body .centbox .sendbox .sendbtn {
+.centbox .sendbox .sendbtn {
   display: inline-block;
   padding: 10px 20px;
   font-size: 1em;
@@ -470,41 +354,7 @@ html body .centbox .sendbox .sendbtn {
   -webkit-border-radius: 20px;
   border-radius: 20px;
 }
-html body .centbox .sendbox .sendbtn:hover {
+.centbox .sendbox .sendbtn:hover {
   color: #afc62c;
   background-color: #32393c;
-}
-html body .centbox .serviceboxs {
-  display: inline-block;
-  width: 80%;
-  border: 1px solid white;
-  padding: 30px;
-}
-html body .centbox .serviceboxs .servicename, html body .centbox .serviceboxs .arrow {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  color: white;
-  cursor: pointer;
-  font-size: 3em;
-}
-html body .centbox .serviceboxs .servicename:hover, html body .centbox .serviceboxs .arrow:hover {
-  color: #afc62c;
-}
-html body .centbox .serviceboxs .servicename {
-  font-weight: bolder;
-  padding: 30px 0;
-}
-html body .centbox .serviceboxs .servicename:hover {
-  text-decoration: underline;
-}
-html body .centbox .serviceboxs .servicinfo {
-  display: inline-block;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 20px;
-  color: white;
-  line-height: 1.4em;
 }
