@@ -127,7 +127,6 @@ html body {
   text-align: center;
   margin: 0;
   width: 100%;
-  height: 100%;
   font-size: medium;
   font-family: "Roboto", "微軟正黑體", Monaco, "Microsoft JhengHei";
   background-color: white;
@@ -148,6 +147,9 @@ html body .outbox header {
   width: 100%;
   border-bottom: 10px solid #adc62e;
   *zoom: 1;
+}
+html body .outbox header.ngbar {
+  border-bottom: 0;
 }
 html body .outbox header:after {
   display: table;

@@ -127,7 +127,6 @@ html body {
   text-align: center;
   margin: 0;
   width: 100%;
-  height: 100%;
   font-size: medium;
   font-family: "Roboto", "微軟正黑體", Monaco, "Microsoft JhengHei";
   background-color: white;
@@ -172,11 +171,82 @@ html body .biggreen {
   line-height: 1.4em;
   color: #aec52c;
 }
+html body .buttombox {
+  display: inline-block;
+  width: 50%;
+}
+html body .buttombox .ba {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 0 10px;
+  background-color: #3a4245;
+  cursor: pointer;
+  color: #b8cb41;
+  text-decoration: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+}
+html body .buttombox .ba:hover {
+  color: #3a4245;
+  background-color: #b8cb41;
+}
+html body .buttombox .ba.h {
+  color: #3a4245;
+  background-color: #b8cb41;
+}
+html body .info {
+  display: inline-block;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 1.1em;
+  line-height: 3em;
+}
+html body .info .infolink {
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  text-align: left;
+  text-decoration: underline;
+}
+html body .info .infolink:hover {
+  color: #afc62c;
+  text-decoration: underline;
+}
+html body .servicetopbox {
+  display: inline-block;
+  width: 100%;
+  padding: 50px 0;
+  background-image: url(../img/green.png);
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-color: #faf8f9;
+}
+html body .servicetopbox .s_topbigtitle, html body .servicetopbox .s_topinfo {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  color: #313846;
+  font-size: 1em;
+}
+html body .servicetopbox .s_topbigtitle {
+  font-size: 2em;
+  font-weight: bolder;
+  padding: 20px;
+}
+html body .servicetopbox .s_topinfo {
+  line-height: 2em;
+}
 html body .centbox {
   display: inline-block;
   width: 80%;
   padding: 40px 0 80px 0;
   *zoom: 1;
+}
+html body .centbox.npadding {
+  padding: 0;
 }
 html body .centbox:after {
   display: table;
@@ -262,6 +332,179 @@ html body .centbox .listbox .cp {
   display: inline-block;
   width: 100%;
   font-size: .9em;
+  color: white;
+  line-height: 1.4em;
+}
+html body .centbox .partnersbox {
+  display: inline-block;
+  width: 100%;
+  margin-top: 50px;
+  padding: 15px;
+  border: 1px solid white;
+  *zoom: 1;
+  display: none;
+}
+html body .centbox .partnersbox:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+html body .centbox .partnersbox .pal, html body .centbox .partnersbox .par {
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+html body .centbox .partnersbox .par {
+  float: right;
+}
+html body .centbox .partnersbox .pal {
+  width: 40%;
+}
+html body .centbox .partnersbox .par {
+  width: calc(100% - 40%);
+}
+html body .centbox .partnersbox.partnershow {
+  display: inline-block;
+}
+html body .centbox .partnersbox .pal {
+  display: inline-block;
+  float: left;
+  height: 375px;
+  background-color: white;
+}
+html body .centbox .partnersbox .pal img {
+  max-width: 100%;
+  height: 100%;
+}
+html body .centbox .partnersbox .par {
+  display: inline-block;
+  float: left;
+  padding-left: 30px;
+}
+html body .centbox .partnersbox .par .pag01, html body .centbox .partnersbox .par .pag02 {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+  color: #afc52c;
+  text-align: left;
+}
+html body .centbox .partnersbox .par .paw01, html body .centbox .partnersbox .par .paw02, html body .centbox .partnersbox .par .paw03 {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: .9em;
+  line-height: 1.4em;
+  color: white;
+  text-align: left;
+}
+html body .centbox .partnersbox .par .pag01 {
+  font-size: 2em;
+}
+html body .centbox .partnersbox .par .paw01 {
+  font-size: 1em;
+  line-height: 1.6em;
+}
+html body .centbox .partnersbox .par .pag02 {
+  font-size: 1.4em;
+  font-weight: bolder;
+}
+html body .centbox .partnersbox .par .paw03 {
+  padding-top: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-style: italic;
+}
+html body .centbox .partnersbox .par .paw03:hover {
+  text-decoration: underline;
+}
+html body .centbox .cgtype {
+  display: inline-block;
+  width: 50%;
+  padding: 10px 0;
+  color: #b8cb41;
+}
+html body .centbox .cgtype.biggreen {
+  font-size: 1.6em;
+  font-weight: bolder;
+}
+html body .centbox .contactbox {
+  display: inline-block;
+  width: 80%;
+  margin-top: 30px;
+  border: 1px solid white;
+  padding: 20px;
+}
+html body .centbox .contactbox .inputbox, html body .centbox .contactbox .inputbox02 {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  outline: 0;
+  font-size: 1em;
+  color: #32393c;
+}
+html body .centbox .contactbox .inputbox {
+  margin-bottom: 20px;
+}
+html body .centbox .contactbox .inputbox02 {
+  min-height: 300px;
+}
+html body .centbox .sendbox {
+  display: inline-block;
+  width: 100%;
+  margin-top: 30px;
+}
+html body .centbox .sendbox .sendbtn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #32393c;
+  background-color: #afc62c;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+html body .centbox .sendbox .sendbtn:hover {
+  color: #afc62c;
+  background-color: #32393c;
+}
+html body .centbox .serviceboxs {
+  display: inline-block;
+  width: 80%;
+  border: 1px solid white;
+  padding: 30px;
+}
+html body .centbox .serviceboxs .servicename, html body .centbox .serviceboxs .arrow {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  font-size: 3em;
+}
+html body .centbox .serviceboxs .servicename:hover, html body .centbox .serviceboxs .arrow:hover {
+  color: #afc62c;
+}
+html body .centbox .serviceboxs .servicename {
+  font-weight: bolder;
+  padding: 30px 0;
+}
+html body .centbox .serviceboxs .servicename:hover {
+  text-decoration: underline;
+}
+html body .centbox .serviceboxs .servicinfo {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
   color: white;
   line-height: 1.4em;
 }
