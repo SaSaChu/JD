@@ -103,7 +103,7 @@
   font-size: 3em;
 }
 .centbox .serviceboxs .sc_detail .sc_a01:hover, .centbox .serviceboxs .sc_detail .sc_a03:hover {
-  color: #afc62c;
+  color: #a3c014;
 }
 .centbox .serviceboxs .sc_detail .sc_a01 {
   font-weight: bolder;
@@ -129,7 +129,7 @@
 }
 .centbox .serviceboxs .sc_detail .sc_b01 {
   padding-bottom: 30px;
-  color: #afc62c;
+  color: #a3c014;
   font-weight: bolder;
   font-size: 3em;
 }
@@ -202,5 +202,5 @@
   font-size: 3em;
 }
 .centbox .serviceboxs .sc_detail .sc_b04:hover {
-  color: #afc62c;
+  color: #a3c014;
 }
