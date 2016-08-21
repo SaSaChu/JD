@@ -93,7 +93,9 @@ $(function () {
 
 
 
-
+  $('#to_top').click (function () {
+    $('body').animate ({ scrollTop: 0 }, 'slow');
+  });
 });
 
 

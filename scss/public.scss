@@ -430,6 +430,29 @@ html {
 
       footer {
         width: 100%;
+        position: relative;
+
+        #to_top {
+          position: absolute;
+          right: 0;
+          top: -50px;
+          display: inline-block;
+          height: 50px;
+          padding: 3px;
+          background-color: rgba(175, 198, 44, 1.00);
+          font-size: 15px;
+          cursor: pointer;
+
+          &:before {
+            content: '^';
+            display: inline-block;
+            width: 100%;
+            font-size: 40px;
+            height: 20px;
+            margin-bottom: 5px;
+            color: rgba(255, 255, 254, 1.00);
+          }
+        }
 
         .fgreen {
           width: 100%;
