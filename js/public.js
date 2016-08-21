@@ -69,6 +69,21 @@ $(function () {
     });
   });
 
+  var now = document.URL.replace (/^.*[\\\/]/, '');
+  var hash = window.location.hash.trim ().slice (1);
+  if (hash.length) {
+    now = now.replace ('#' + hash, '');
+    if (now == 'service.html') {
+      for (var i = 1; i < 10; i++) {
+        if (hash == ('service_' + i)) {
+            $('.serviceboxs').eq (i - 1).find ('.sc_a03').click ();
+        }
+      }
+    }
+  }
+
+  
+
   // $('.case_detail').hover(function(){
   //   $(this).removeClass('D');
   //   $(this).addClass('C');
