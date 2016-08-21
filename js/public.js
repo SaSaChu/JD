@@ -5,7 +5,7 @@
 
 $(function () {
    // 圖自動縮放
-   $('.banner, .spb, .peopimg, .sc_cel, .case_b05').imgLiquid ({verticalAlign: 'center'});
+   $('.banners .img, .spb, .peopimg, .sc_cel, .case_b05').imgLiquid ({verticalAlign: 'center'});
 
    // 右邊menu
    $('.navboxout, #navbox .x').click(function() {
@@ -44,7 +44,7 @@ $(function () {
    })
 
   // service下拉動畫
-  $('.serviceboxs').each (function () {
+  $('.serviceboxs._s').each (function () {
     var $that = $(this);
     $that.get (0).ori_h = $that.height () + 31 * 2;
     $that.get (0).sh_h = $that.find ('.sc_detail').addClass ('B').height () + 31 * 2;
@@ -68,6 +68,7 @@ $(function () {
       }
     });
   });
+  
 
   // $('.case_detail').hover(function(){
   //   $(this).removeClass('D');
@@ -77,7 +78,7 @@ $(function () {
   //  $(this).addClass('D');
   // });
 
-
+  // case
   $('.case_detail .case_a01, .case_detail .case_a03, .case_detail .case_b06').click(function() {
     if ($(this).parent().hasClass('casebg01') && $(this).parent().hasClass('C')) {
       $(this).parent().removeClass('casebg01');
@@ -92,7 +93,85 @@ $(function () {
   });
 
 
+  // case
+  $('.serviceboxs._c').each (function () {
+    var $that = $(this);
+    $that.get (0).ori_h = $that.height () + 31 * 2;
+    var cl = $that.find ('.case_detail').attr ('class');
+    $that.get (0).sh_h = $that.find ('.case_detail').attr ('class', 'case_detail D').height () + 31 * 2;
+    $that.find ('.case_detail').attr ('class', cl);
 
+    $that.find ('.case_a01,.case_a03,.case_b06').click(function () {
+      if ($(this).parent().hasClass('C')) {
+        $that.css ({
+          'height': $that.get (0).sh_h
+        }).animate ({
+          'height': $that.get (0).ori_h
+        });
+
+      } else {
+        $that.css ({
+          'height': $that.get (0).ori_h
+        }).animate ({
+          'height': $that.get (0).sh_h
+        });
+
+      }
+    });
+  });
+
+
+
+  var now = document.URL.replace (/^.*[\\\/]/, '');
+  var hash = window.location.hash.trim ().slice (1);
+  if (hash.length) {
+    now = now.replace ('#' + hash, '');
+    var i = 1;
+    if (now == 'service.html') {
+      for (i = 1; i < 10; i++) {
+        if (hash == ('service_' + i)) {
+            $('.serviceboxs._s').eq (i - 1).find ('.sc_a03').click ();
+        }
+      }
+    }
+
+    if (now == 'case.html') {
+      for (i = 1; i < 10; i++) {
+        if (hash == ('case_' + i)) {
+            $('.serviceboxs._c').eq (i - 1).find ('.case_a01').click ();
+        }
+      }
+    }
+    if (now == 'partners.html') {
+      for (i = 1; i < 10; i++) {
+        if (hash == ('partners_' + i)) {
+            $('.ba').eq (i - 1).click ();
+        }
+      }
+    }
+  }
+  window.onhashchange = function () {
+    location.reload ();
+  };
+
+
+  $('#to_top').click (function () {
+    $('body').animate ({ scrollTop: 0 }, 'slow');
+  });
+  $('.banners').each (function () {
+    var $that = $(this);
+    $that.data ('n', 1).attr ('class', 'banners n1').data ('l', $that.find ('.banner').length);
+    $that.find ('.points a').click (function () {
+      $that.data ('n', $(this).index () + 1).attr ('class', 'banners n' + ($(this).index () + 1));
+    });
+  });
+
+  setInterval (function () {
+    var n = $('.banners').data ('n'),
+        l = $('.banners').data ('l');
+    n = (n + 1 > l ? 0 : n) + 1;
+    $('.banners').data ('n', n).attr ('class', 'banners n' + n);
+  }, 7000);
 
 });
 

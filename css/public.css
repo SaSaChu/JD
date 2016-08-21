@@ -49,11 +49,11 @@
  */
 @font-face {
   font-family: "Monaco";
-  src: url('/JD/font/monaco/monaco.ttf?1470839577') format('truetype'), url('/JD/font/monaco/monaco.otf?1470839577') format('opentype');
+  src: url('/JD/font/monaco/monaco.ttf?1471709356') format('truetype'), url('/JD/font/monaco/monaco.otf?1471709356') format('opentype');
 }
 @font-face {
   font-family: "icomoon";
-  src: url('/JD/font/icomoon/icomoon.eot?1471246134') format('embedded-opentype'), url('/JD/font/icomoon/icomoon.woff?1471246134') format('woff'), url('/JD/font/icomoon/icomoon.ttf?1471246134') format('truetype'), url('/JD/font/icomoon/icomoon.svg?1471246134') format('svg');
+  src: url('/JD/font/icomoon/icomoon.eot?1471709356') format('embedded-opentype'), url('/JD/font/icomoon/icomoon.woff?1471709356') format('woff'), url('/JD/font/icomoon/icomoon.ttf?1471709356') format('truetype'), url('/JD/font/icomoon/icomoon.svg?1471709356') format('svg');
 }
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon', Monaco, "微軟正黑體", "Microsoft JhengHei";
@@ -353,13 +353,466 @@ html body .outbox .middle .blackbg .middletitle {
   font-size: 1.2em;
   font-weight: bolder;
 }
-html body .outbox .middle .banner {
+html body .outbox .middle .banners {
+  position: relative;
   width: 100%;
   height: 500px;
+  overflow: hidden;
 }
-html body .outbox .middle .banner img {
-  max-width: 100%;
+html body .outbox .middle .banners .banner:nth-child(1) {
+  left: 0%;
+}
+html body .outbox .middle .banners .banner:nth-child(2) {
+  left: 100%;
+}
+html body .outbox .middle .banners .banner:nth-child(3) {
+  left: 200%;
+}
+html body .outbox .middle .banners .banner:nth-child(4) {
+  left: 300%;
+}
+html body .outbox .middle .banners .banner:nth-child(5) {
+  left: 400%;
+}
+html body .outbox .middle .banners .banner:nth-child(6) {
+  left: 500%;
+}
+html body .outbox .middle .banners .banner:nth-child(7) {
+  left: 600%;
+}
+html body .outbox .middle .banners .banner:nth-child(8) {
+  left: 700%;
+}
+html body .outbox .middle .banners .banner:nth-child(9) {
+  left: 800%;
+}
+html body .outbox .middle .banners .banner:nth-child(10) {
+  left: 900%;
+}
+html body .outbox .middle .banners.n1 .banner:nth-child(1) {
+  left: 0%;
+}
+html body .outbox .middle .banners.n1 .banner:nth-child(2) {
+  left: 100%;
+}
+html body .outbox .middle .banners.n1 .banner:nth-child(3) {
+  left: 200%;
+}
+html body .outbox .middle .banners.n1 .banner:nth-child(4) {
+  left: 300%;
+}
+html body .outbox .middle .banners.n1 .banner:nth-child(5) {
+  left: 400%;
+}
+html body .outbox .middle .banners.n1 .banner:nth-child(6) {
+  left: 500%;
+}
+html body .outbox .middle .banners.n1 .banner:nth-child(7) {
+  left: 600%;
+}
+html body .outbox .middle .banners.n1 .banner:nth-child(8) {
+  left: 700%;
+}
+html body .outbox .middle .banners.n1 .banner:nth-child(9) {
+  left: 800%;
+}
+html body .outbox .middle .banners.n1 .banner:nth-child(10) {
+  left: 900%;
+}
+html body .outbox .middle .banners.n1 .points a:nth-child(1) {
+  background-color: #f0f0f0;
+}
+html body .outbox .middle .banners.n2 .banner:nth-child(1) {
+  left: -100%;
+}
+html body .outbox .middle .banners.n2 .banner:nth-child(2) {
+  left: 0%;
+}
+html body .outbox .middle .banners.n2 .banner:nth-child(3) {
+  left: 100%;
+}
+html body .outbox .middle .banners.n2 .banner:nth-child(4) {
+  left: 200%;
+}
+html body .outbox .middle .banners.n2 .banner:nth-child(5) {
+  left: 300%;
+}
+html body .outbox .middle .banners.n2 .banner:nth-child(6) {
+  left: 400%;
+}
+html body .outbox .middle .banners.n2 .banner:nth-child(7) {
+  left: 500%;
+}
+html body .outbox .middle .banners.n2 .banner:nth-child(8) {
+  left: 600%;
+}
+html body .outbox .middle .banners.n2 .banner:nth-child(9) {
+  left: 700%;
+}
+html body .outbox .middle .banners.n2 .banner:nth-child(10) {
+  left: 800%;
+}
+html body .outbox .middle .banners.n2 .points a:nth-child(2) {
+  background-color: #f0f0f0;
+}
+html body .outbox .middle .banners.n3 .banner:nth-child(1) {
+  left: -200%;
+}
+html body .outbox .middle .banners.n3 .banner:nth-child(2) {
+  left: -100%;
+}
+html body .outbox .middle .banners.n3 .banner:nth-child(3) {
+  left: 0%;
+}
+html body .outbox .middle .banners.n3 .banner:nth-child(4) {
+  left: 100%;
+}
+html body .outbox .middle .banners.n3 .banner:nth-child(5) {
+  left: 200%;
+}
+html body .outbox .middle .banners.n3 .banner:nth-child(6) {
+  left: 300%;
+}
+html body .outbox .middle .banners.n3 .banner:nth-child(7) {
+  left: 400%;
+}
+html body .outbox .middle .banners.n3 .banner:nth-child(8) {
+  left: 500%;
+}
+html body .outbox .middle .banners.n3 .banner:nth-child(9) {
+  left: 600%;
+}
+html body .outbox .middle .banners.n3 .banner:nth-child(10) {
+  left: 700%;
+}
+html body .outbox .middle .banners.n3 .points a:nth-child(3) {
+  background-color: #f0f0f0;
+}
+html body .outbox .middle .banners.n4 .banner:nth-child(1) {
+  left: -300%;
+}
+html body .outbox .middle .banners.n4 .banner:nth-child(2) {
+  left: -200%;
+}
+html body .outbox .middle .banners.n4 .banner:nth-child(3) {
+  left: -100%;
+}
+html body .outbox .middle .banners.n4 .banner:nth-child(4) {
+  left: 0%;
+}
+html body .outbox .middle .banners.n4 .banner:nth-child(5) {
+  left: 100%;
+}
+html body .outbox .middle .banners.n4 .banner:nth-child(6) {
+  left: 200%;
+}
+html body .outbox .middle .banners.n4 .banner:nth-child(7) {
+  left: 300%;
+}
+html body .outbox .middle .banners.n4 .banner:nth-child(8) {
+  left: 400%;
+}
+html body .outbox .middle .banners.n4 .banner:nth-child(9) {
+  left: 500%;
+}
+html body .outbox .middle .banners.n4 .banner:nth-child(10) {
+  left: 600%;
+}
+html body .outbox .middle .banners.n4 .points a:nth-child(4) {
+  background-color: #f0f0f0;
+}
+html body .outbox .middle .banners.n5 .banner:nth-child(1) {
+  left: -400%;
+}
+html body .outbox .middle .banners.n5 .banner:nth-child(2) {
+  left: -300%;
+}
+html body .outbox .middle .banners.n5 .banner:nth-child(3) {
+  left: -200%;
+}
+html body .outbox .middle .banners.n5 .banner:nth-child(4) {
+  left: -100%;
+}
+html body .outbox .middle .banners.n5 .banner:nth-child(5) {
+  left: 0%;
+}
+html body .outbox .middle .banners.n5 .banner:nth-child(6) {
+  left: 100%;
+}
+html body .outbox .middle .banners.n5 .banner:nth-child(7) {
+  left: 200%;
+}
+html body .outbox .middle .banners.n5 .banner:nth-child(8) {
+  left: 300%;
+}
+html body .outbox .middle .banners.n5 .banner:nth-child(9) {
+  left: 400%;
+}
+html body .outbox .middle .banners.n5 .banner:nth-child(10) {
+  left: 500%;
+}
+html body .outbox .middle .banners.n5 .points a:nth-child(5) {
+  background-color: #f0f0f0;
+}
+html body .outbox .middle .banners.n6 .banner:nth-child(1) {
+  left: -500%;
+}
+html body .outbox .middle .banners.n6 .banner:nth-child(2) {
+  left: -400%;
+}
+html body .outbox .middle .banners.n6 .banner:nth-child(3) {
+  left: -300%;
+}
+html body .outbox .middle .banners.n6 .banner:nth-child(4) {
+  left: -200%;
+}
+html body .outbox .middle .banners.n6 .banner:nth-child(5) {
+  left: -100%;
+}
+html body .outbox .middle .banners.n6 .banner:nth-child(6) {
+  left: 0%;
+}
+html body .outbox .middle .banners.n6 .banner:nth-child(7) {
+  left: 100%;
+}
+html body .outbox .middle .banners.n6 .banner:nth-child(8) {
+  left: 200%;
+}
+html body .outbox .middle .banners.n6 .banner:nth-child(9) {
+  left: 300%;
+}
+html body .outbox .middle .banners.n6 .banner:nth-child(10) {
+  left: 400%;
+}
+html body .outbox .middle .banners.n6 .points a:nth-child(6) {
+  background-color: #f0f0f0;
+}
+html body .outbox .middle .banners.n7 .banner:nth-child(1) {
+  left: -600%;
+}
+html body .outbox .middle .banners.n7 .banner:nth-child(2) {
+  left: -500%;
+}
+html body .outbox .middle .banners.n7 .banner:nth-child(3) {
+  left: -400%;
+}
+html body .outbox .middle .banners.n7 .banner:nth-child(4) {
+  left: -300%;
+}
+html body .outbox .middle .banners.n7 .banner:nth-child(5) {
+  left: -200%;
+}
+html body .outbox .middle .banners.n7 .banner:nth-child(6) {
+  left: -100%;
+}
+html body .outbox .middle .banners.n7 .banner:nth-child(7) {
+  left: 0%;
+}
+html body .outbox .middle .banners.n7 .banner:nth-child(8) {
+  left: 100%;
+}
+html body .outbox .middle .banners.n7 .banner:nth-child(9) {
+  left: 200%;
+}
+html body .outbox .middle .banners.n7 .banner:nth-child(10) {
+  left: 300%;
+}
+html body .outbox .middle .banners.n7 .points a:nth-child(7) {
+  background-color: #f0f0f0;
+}
+html body .outbox .middle .banners.n8 .banner:nth-child(1) {
+  left: -700%;
+}
+html body .outbox .middle .banners.n8 .banner:nth-child(2) {
+  left: -600%;
+}
+html body .outbox .middle .banners.n8 .banner:nth-child(3) {
+  left: -500%;
+}
+html body .outbox .middle .banners.n8 .banner:nth-child(4) {
+  left: -400%;
+}
+html body .outbox .middle .banners.n8 .banner:nth-child(5) {
+  left: -300%;
+}
+html body .outbox .middle .banners.n8 .banner:nth-child(6) {
+  left: -200%;
+}
+html body .outbox .middle .banners.n8 .banner:nth-child(7) {
+  left: -100%;
+}
+html body .outbox .middle .banners.n8 .banner:nth-child(8) {
+  left: 0%;
+}
+html body .outbox .middle .banners.n8 .banner:nth-child(9) {
+  left: 100%;
+}
+html body .outbox .middle .banners.n8 .banner:nth-child(10) {
+  left: 200%;
+}
+html body .outbox .middle .banners.n8 .points a:nth-child(8) {
+  background-color: #f0f0f0;
+}
+html body .outbox .middle .banners.n9 .banner:nth-child(1) {
+  left: -800%;
+}
+html body .outbox .middle .banners.n9 .banner:nth-child(2) {
+  left: -700%;
+}
+html body .outbox .middle .banners.n9 .banner:nth-child(3) {
+  left: -600%;
+}
+html body .outbox .middle .banners.n9 .banner:nth-child(4) {
+  left: -500%;
+}
+html body .outbox .middle .banners.n9 .banner:nth-child(5) {
+  left: -400%;
+}
+html body .outbox .middle .banners.n9 .banner:nth-child(6) {
+  left: -300%;
+}
+html body .outbox .middle .banners.n9 .banner:nth-child(7) {
+  left: -200%;
+}
+html body .outbox .middle .banners.n9 .banner:nth-child(8) {
+  left: -100%;
+}
+html body .outbox .middle .banners.n9 .banner:nth-child(9) {
+  left: 0%;
+}
+html body .outbox .middle .banners.n9 .banner:nth-child(10) {
+  left: 100%;
+}
+html body .outbox .middle .banners.n9 .points a:nth-child(9) {
+  background-color: #f0f0f0;
+}
+html body .outbox .middle .banners.n10 .banner:nth-child(1) {
+  left: -900%;
+}
+html body .outbox .middle .banners.n10 .banner:nth-child(2) {
+  left: -800%;
+}
+html body .outbox .middle .banners.n10 .banner:nth-child(3) {
+  left: -700%;
+}
+html body .outbox .middle .banners.n10 .banner:nth-child(4) {
+  left: -600%;
+}
+html body .outbox .middle .banners.n10 .banner:nth-child(5) {
+  left: -500%;
+}
+html body .outbox .middle .banners.n10 .banner:nth-child(6) {
+  left: -400%;
+}
+html body .outbox .middle .banners.n10 .banner:nth-child(7) {
+  left: -300%;
+}
+html body .outbox .middle .banners.n10 .banner:nth-child(8) {
+  left: -200%;
+}
+html body .outbox .middle .banners.n10 .banner:nth-child(9) {
+  left: -100%;
+}
+html body .outbox .middle .banners.n10 .banner:nth-child(10) {
+  left: 0%;
+}
+html body .outbox .middle .banners.n10 .points a:nth-child(10) {
+  background-color: #f0f0f0;
+}
+html body .outbox .middle .banners .points {
+  position: absolute;
+  bottom: 7%;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+}
+html body .outbox .middle .banners .points div {
+  display: inline-block;
+  *zoom: 1;
+}
+html body .outbox .middle .banners .points div:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+html body .outbox .middle .banners .points div a {
+  float: left;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #b4b4b4;
+  cursor: pointer;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+html body .outbox .middle .banners .points div a + a {
+  margin-left: 10px;
+}
+html body .outbox .middle .banners .points div a:hover {
+  background-color: gainsboro;
+}
+html body .outbox .middle .banners .banner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  -moz-transition: left 0.3s;
+  -o-transition: left 0.3s;
+  -webkit-transition: left 0.3s;
+  transition: left 0.3s;
+}
+html body .outbox .middle .banners .banner > .img, html body .outbox .middle .banners .banner > a, html body .outbox .middle .banners .banner > h2, html body .outbox .middle .banners .banner > p {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-shadow: 0 0 1px rgba(39, 40, 34, 0.1);
+}
+html body .outbox .middle .banners .banner > .img img {
+  width: 100%;
+}
+html body .outbox .middle .banners .banner > a {
+  left: calc(50% - 200px / 2);
+  width: 200px;
+  height: 45px;
+  line-height: 43px;
+  margin: 0;
+  font-size: 16px;
+  text-decoration: none;
+  border: 2px solid white;
+  top: 28%;
+}
+html body .outbox .middle .banners .banner > a + h2 {
+  top: calc(28% + 45px + 10px);
+}
+html body .outbox .middle .banners .banner > a + h2 + p {
+  top: calc(28% + 45px + 10px + 35px + 15px);
+}
+html body .outbox .middle .banners .banner > h2 {
+  text-align: center;
+  height: 35px;
+  line-height: 33px;
+  font-style: italic;
+  font-style: 30px;
+}
+html body .outbox .middle .banners .banner > p {
   height: auto;
+  color: #fafafa;
+  line-height: 20px;
+}
+html body .outbox .middle .banners .banner > p a {
+  color: #fafafa;
 }
 html body .outbox .middle .feature {
   width: 100%;
@@ -443,6 +896,27 @@ html body .outbox .middle .services > div .sread:hover {
 }
 html body .outbox footer {
   width: 100%;
+  position: relative;
+}
+html body .outbox footer #to_top {
+  position: absolute;
+  right: 0;
+  top: -50px;
+  display: inline-block;
+  height: 50px;
+  padding: 3px;
+  background-color: #afc62c;
+  font-size: 15px;
+  cursor: pointer;
+}
+html body .outbox footer #to_top:before {
+  content: '^';
+  display: inline-block;
+  width: 100%;
+  font-size: 40px;
+  height: 20px;
+  margin-bottom: 5px;
+  color: #fffffe;
 }
 html body .outbox footer .fgreen {
   width: 100%;
