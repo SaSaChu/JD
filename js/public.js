@@ -81,6 +81,9 @@ $(function () {
       }
     }
   }
+  window.onhashchange = function () {
+    location.reload ();
+  };
 
   
 
