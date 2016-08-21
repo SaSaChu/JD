@@ -5,7 +5,7 @@
 
 $(function () {
    // 圖自動縮放
-   $('.banner, .spb, .peopimg, .sc_cel, .case_b05').imgLiquid ({verticalAlign: 'center'});
+   $('.banners .img, .spb, .peopimg, .sc_cel, .case_b05').imgLiquid ({verticalAlign: 'center'});
 
    // 右邊menu
    $('.navboxout, #navbox .x').click(function() {
@@ -96,6 +96,21 @@ $(function () {
   $('#to_top').click (function () {
     $('body').animate ({ scrollTop: 0 }, 'slow');
   });
+  $('.banners').each (function () {
+    var $that = $(this);
+    $that.data ('n', 1).attr ('class', 'banners n1').data ('l', $that.find ('.banner').length);
+    $that.find ('.points a').click (function () {
+      $that.data ('n', $(this).index () + 1).attr ('class', 'banners n' + ($(this).index () + 1));
+    });
+  });
+
+  setInterval (function () {
+    var n = $('.banners').data ('n'),
+        l = $('.banners').data ('l');
+    n = (n + 1 > l ? 0 : n) + 1;
+    $('.banners').data ('n', n).attr ('class', 'banners n' + n);
+  }, 7000);
+
 });
 
 
