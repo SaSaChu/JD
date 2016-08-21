@@ -142,6 +142,13 @@ $(function () {
         }
       }
     }
+    if (now == 'partners.html') {
+      for (i = 1; i < 10; i++) {
+        if (hash == ('partners_' + i)) {
+            $('.ba').eq (i - 1).click ();
+        }
+      }
+    }
   }
   window.onhashchange = function () {
     location.reload ();
