@@ -6,7 +6,7 @@
 @import "_oa";
 
 @include font-face("Monaco", font-files("monaco/monaco.ttf", "monaco/monaco.otf"));
-@include font-face("gotham", font-files("gotham/gotham-book-webfont.eot", "gotham/gotham-book-webfont.svg", "gotham/gotham-book-webfont.ttf", "gotham/gotham-book-webfont.woff", "gotham/gotham-book-webfont.woff2"));
+// @include font-face("gotham", font-files("gotham/gotham-book-webfont.eot", "gotham/gotham-book-webfont.svg", "gotham/gotham-book-webfont.ttf", "gotham/gotham-book-webfont.woff", "gotham/gotham-book-webfont.woff2"));
 @include font-face("icomoon", font-files("icomoon/icomoon.eot", "icomoon/icomoon.woff", "icomoon/icomoon.ttf", "icomoon/icomoon.svg"));
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon', 'gotham', "微軟正黑體", Monaco, "Microsoft JhengHei";

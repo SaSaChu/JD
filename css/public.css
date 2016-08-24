@@ -49,15 +49,11 @@
  */
 @font-face {
   font-family: "Monaco";
-  src: url('/JD/font/monaco/monaco.ttf?1470839577') format('truetype'), url('/JD/font/monaco/monaco.otf?1470839577') format('opentype');
-}
-@font-face {
-  font-family: "gotham";
-  src: url('/JD/font/gotham/gotham-book-webfont.eot?1471903718') format('embedded-opentype'), url('/JD/font/gotham/gotham-book-webfont.svg?1471903718') format('svg'), url('/JD/font/gotham/gotham-book-webfont.ttf?1471903718') format('truetype'), url('/JD/font/gotham/gotham-book-webfont.woff?1471903718') format('woff'), url('/JD/font/gotham/gotham-book-webfont.woff2?1471903718') format('woff2');
+  src: url('/JD/font/monaco/monaco.ttf?1471709356') format('truetype'), url('/JD/font/monaco/monaco.otf?1471709356') format('opentype');
 }
 @font-face {
   font-family: "icomoon";
-  src: url('/JD/font/icomoon/icomoon.eot?1472015256') format('embedded-opentype'), url('/JD/font/icomoon/icomoon.woff?1472015256') format('woff'), url('/JD/font/icomoon/icomoon.ttf?1472015256') format('truetype'), url('/JD/font/icomoon/icomoon.svg?1472015256') format('svg');
+  src: url('/JD/font/icomoon/icomoon.eot?1472020818') format('embedded-opentype'), url('/JD/font/icomoon/icomoon.woff?1472020818') format('woff'), url('/JD/font/icomoon/icomoon.ttf?1472020818') format('truetype'), url('/JD/font/icomoon/icomoon.svg?1472020818') format('svg');
 }
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon', 'gotham', "微軟正黑體", Monaco, "Microsoft JhengHei";
@@ -370,7 +366,7 @@ html body .outbox .middle .blackbg .middletitle {
   color: white;
   font-size: 11px;
   font-weight: bolder;
-  letter-spacing: 2pxl;
+  letter-spacing: 2px;
 }
 html body .outbox .middle .banners {
   position: relative;
