@@ -17,10 +17,10 @@
   // service
   .serviceboxs {
     display: inline-block;
-    width: 80%;
+    width: 800px;
     border: 1px solid white;
-    padding: 30px;
-    margin-bottom: 30px;
+    padding: 15px;
+    margin-bottom: 22px;
 
     .case_detail {
       display: inline-block;
@@ -28,7 +28,7 @@
       cursor: pointer;
 
       &.casebg01 {
-        height: 250px;
+        height: 235px;
         background-image: url(../img/305195807.jpg);
         background-position: 50% 50%;
         background-size: cover;
@@ -60,7 +60,7 @@
 
     }
 
-      .case_a01, .case_a02, .case_a03 {
+      .case_a01, .case_a02, .case_a03, .icon-chevron-thin-down {
         display: none;
       }
 
@@ -87,13 +87,13 @@
       }
 
 
-      .case_a01, .case_a03 {
+      .case_a01 {
         margin: 0;
         padding: 0;
         width: 100%;
         color: white;
         cursor: pointer;
-        font-size: 3em;
+        font-size: 2.5em;
 
         &:hover {
           color: rgba(163, 192, 20, 1.00);
@@ -118,6 +118,18 @@
         line-height: 1.4em;
       }
 
+      .case_a03 {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+          color: rgba(163, 192, 20, 1.00);
+        }
+      }
 
 
 
@@ -130,7 +142,6 @@
       }
 
       .case_b01 {
-        padding-bottom: 30px;
         color: rgba(163, 192, 20, 1.00);
         font-weight: bolder;
         font-size: 3em;
@@ -165,11 +176,12 @@
       }
 
       .case_b06 {
-        padding-bottom: 30px;
-        cursor: pointer;
+        display: inline-block;
+        margin: 0;
+        padding-bottom: 20px;
+        font-size: 2em;
         color: white;
-        font-weight: bolder;
-        font-size: 3em;
+        cursor: pointer;
 
         &:hover {
           color: rgba(163, 192, 20, 1.00);
@@ -181,7 +193,6 @@
 
   }
  }
-
 
 
 

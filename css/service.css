@@ -49,7 +49,8 @@
 .servicetopbox {
   display: inline-block;
   width: 100%;
-  padding: 50px 0;
+  height: 185px;
+  padding: 65px 0 40px 0;
   background-image: url(../img/green.png);
   background-repeat: repeat-y;
   background-size: 100% auto;
@@ -63,12 +64,12 @@
   font-size: 1em;
 }
 .servicetopbox .s_topbigtitle {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: bolder;
-  padding: 20px;
 }
 .servicetopbox .s_topinfo {
-  line-height: 2em;
+  line-height: 1.3em;
+  padding-top: 13px;
 }
 
 .centbox.npadding {
@@ -76,10 +77,10 @@
 }
 .centbox .serviceboxs {
   display: inline-block;
-  width: 80%;
+  width: 800px;
   border: 1px solid white;
-  padding: 30px;
-  margin-bottom: 30px;
+  padding: 30px 55px;
+  margin-bottom: 20px;
 }
 .centbox .serviceboxs .sc_detail.A .sc_a01, .centbox .serviceboxs .sc_detail.A .sc_a02, .centbox .serviceboxs .sc_detail.A .sc_a03 {
   display: inline-block;
@@ -100,7 +101,7 @@
   width: 100%;
   color: white;
   cursor: pointer;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 .centbox .serviceboxs .sc_detail .sc_a01:hover, .centbox .serviceboxs .sc_detail .sc_a03:hover {
   color: #a3c014;
@@ -119,29 +120,37 @@
   padding: 0;
   padding-bottom: 20px;
   color: white;
-  line-height: 1.4em;
+  line-height: 1.5em;
+  font-size: 1em;
 }
-.centbox .serviceboxs .sc_detail .sc_b01, .centbox .serviceboxs .sc_detail .sc_b02, .centbox .serviceboxs .sc_detail .sc_b04 {
+.centbox .serviceboxs .sc_detail .sc_a03 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+}
+.centbox .serviceboxs .sc_detail .sc_b01, .centbox .serviceboxs .sc_detail .sc_b02 {
   display: inline-block;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 .centbox .serviceboxs .sc_detail .sc_b01 {
-  padding-bottom: 30px;
+  padding: 30px 0 20px 0;
   color: #a3c014;
   font-weight: bolder;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 .centbox .serviceboxs .sc_detail .sc_b02 {
   padding-bottom: 35px;
   color: white;
-  line-height: 1.4em;
+  line-height: 1.5em;
+  font-size: 1.1em;
 }
 .centbox .serviceboxs .sc_detail .sc_b03 {
   display: inline-block;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   *zoom: 1;
 }
 .centbox .serviceboxs .sc_detail .sc_b03:after {
@@ -185,7 +194,8 @@
 }
 .centbox .serviceboxs .sc_detail .sc_b03 .sc_cer .sc_g {
   padding-bottom: 15px;
-  font-size: 1em;
+  font-size: 1.2em;
+  line-height: 1.4em;
   font-weight: bolder;
   color: #a3c014;
 }
@@ -195,11 +205,12 @@
   font-size: .9em;
 }
 .centbox .serviceboxs .sc_detail .sc_b04 {
-  padding-bottom: 30px;
+  display: inline-block;
+  margin: 0;
+  padding-top: 50px;
+  font-size: 2em;
   cursor: pointer;
   color: white;
-  font-weight: bolder;
-  font-size: 3em;
 }
 .centbox .serviceboxs .sc_detail .sc_b04:hover {
   color: #a3c014;

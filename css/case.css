@@ -51,10 +51,10 @@
 }
 .centbox .serviceboxs {
   display: inline-block;
-  width: 80%;
+  width: 800px;
   border: 1px solid white;
-  padding: 30px;
-  margin-bottom: 30px;
+  padding: 15px;
+  margin-bottom: 22px;
 }
 .centbox .serviceboxs .case_detail {
   display: inline-block;
@@ -62,7 +62,7 @@
   cursor: pointer;
 }
 .centbox .serviceboxs .case_detail.casebg01 {
-  height: 250px;
+  height: 235px;
   background-image: url(../img/305195807.jpg);
   background-position: 50% 50%;
   background-size: cover;
@@ -87,7 +87,7 @@
   display: inline-block;
   z-index: 5;
 }
-.centbox .serviceboxs .case_detail .case_a01, .centbox .serviceboxs .case_detail .case_a02, .centbox .serviceboxs .case_detail .case_a03 {
+.centbox .serviceboxs .case_detail .case_a01, .centbox .serviceboxs .case_detail .case_a02, .centbox .serviceboxs .case_detail .case_a03, .centbox .serviceboxs .case_detail .icon-chevron-thin-down {
   display: none;
 }
 .centbox .serviceboxs .case_detail.C .case_b01, .centbox .serviceboxs .case_detail.C .case_b02, .centbox .serviceboxs .case_detail.C .case_b03, .centbox .serviceboxs .case_detail.C .case_b04, .centbox .serviceboxs .case_detail.C .case_b05, .centbox .serviceboxs .case_detail.C .case_b06 {
@@ -103,15 +103,15 @@
 .centbox .serviceboxs .case_detail.D .case_b01, .centbox .serviceboxs .case_detail.D .case_b02, .centbox .serviceboxs .case_detail.D .case_b03, .centbox .serviceboxs .case_detail.D .case_b04, .centbox .serviceboxs .case_detail.D .case_b05, .centbox .serviceboxs .case_detail.D .case_b06 {
   display: inline-block;
 }
-.centbox .serviceboxs .case_detail .case_a01, .centbox .serviceboxs .case_detail .case_a03 {
+.centbox .serviceboxs .case_detail .case_a01 {
   margin: 0;
   padding: 0;
   width: 100%;
   color: white;
   cursor: pointer;
-  font-size: 3em;
+  font-size: 2.5em;
 }
-.centbox .serviceboxs .case_detail .case_a01:hover, .centbox .serviceboxs .case_detail .case_a03:hover {
+.centbox .serviceboxs .case_detail .case_a01:hover {
   color: #a3c014;
 }
 .centbox .serviceboxs .case_detail .case_a01 {
@@ -129,6 +129,17 @@
   color: white;
   line-height: 1.4em;
 }
+.centbox .serviceboxs .case_detail .case_a03 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+}
+.centbox .serviceboxs .case_detail .case_a03:hover {
+  color: #a3c014;
+}
 .centbox .serviceboxs .case_detail .case_b01, .centbox .serviceboxs .case_detail .case_b02, .centbox .serviceboxs .case_detail .case_b03, .centbox .serviceboxs .case_detail .case_b04 {
   margin: 0;
   padding: 0;
@@ -136,7 +147,6 @@
   color: white;
 }
 .centbox .serviceboxs .case_detail .case_b01 {
-  padding-bottom: 30px;
   color: #a3c014;
   font-weight: bolder;
   font-size: 3em;
@@ -168,11 +178,12 @@
   height: 100%;
 }
 .centbox .serviceboxs .case_detail .case_b06 {
-  padding-bottom: 30px;
-  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 2em;
   color: white;
-  font-weight: bolder;
-  font-size: 3em;
+  cursor: pointer;
 }
 .centbox .serviceboxs .case_detail .case_b06:hover {
   color: #a3c014;

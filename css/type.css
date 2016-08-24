@@ -48,7 +48,7 @@
  */
 .whitebox {
   display: inline-block;
-  width: 80%;
+  width: 800px;
   border: 1px solid white;
   padding-bottom: 80px;
 }
@@ -63,7 +63,7 @@
 }
 .whitebox .wbc {
   display: inline-block;
-  width: 80%;
+  width: 86%;
   margin: 0;
   padding-top: 30px;
   color: white;
@@ -76,13 +76,14 @@
   width: 80%;
   font-size: 3.8em;
   font-weight: bolder;
-  line-height: 1.4em;
+  line-height: 1.2em;
   color: #a3c014;
 }
 
 .buttombox {
   display: inline-block;
   width: 50%;
+  margin: 20px 0;
 }
 .buttombox .ba {
   display: inline-block;
@@ -128,7 +129,7 @@
 
 .centbox {
   display: inline-block;
-  width: 80%;
+  width: 100%;
   padding: 40px 0 80px 0;
   *zoom: 1;
 }
@@ -138,18 +139,23 @@
   line-height: 0;
   clear: both;
 }
+.centbox.clinet_pt {
+  width: 1000px;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
 .centbox .peopbox {
   float: left;
   display: inline-block;
-  width: calc(50% - 10px);
+  width: calc(50% - 15px);
   border: 1px solid white;
-  margin: 0 5px;
-  padding: 25px;
+  margin: 15px 5px 0 5px;
+  padding: 20px;
 }
 .centbox .peopbox .peopimg {
   display: inline-block;
   width: 100%;
-  height: 350px;
+  height: 310px;
 }
 .centbox .peopbox .peopimg img {
   max-width: 100%;
@@ -164,17 +170,21 @@
   text-align: left;
 }
 .centbox .peopbox .name {
+  display: inline-block;
   font-size: 1.8em;
   font-weight: bolder;
-  padding: 10px 0;
+  padding-top: 25px;
 }
 .centbox .peopbox .jobtitle {
-  font-size: 1.4em;
+  display: inline-block;
+  font-size: 1.2em;
+  padding-top: 15px;
 }
 .centbox .peopbox .present {
+  display: inline-block;
   font-size: 1em;
-  line-height: 1.6em;
-  padding-top: 30px;
+  line-height: 1.5em;
+  padding-top: 35px;
 }
 .centbox .peopbox:first-child {
   float: left;
@@ -185,8 +195,8 @@
 .centbox .listbox {
   display: inline-block;
   float: left;
-  margin: 0 10px 80px 10px;
-  width: calc(25% - 20px);
+  margin: 0 12px 80px 12px;
+  width: calc(25% - 24px);
 }
 .centbox .listbox .logobox {
   display: inline-block;
@@ -209,21 +219,21 @@
   display: inline-block;
   width: 100%;
   padding: 10px 0;
-  font-size: 1.2em;
+  font-size: .9em;
   color: #a3c014;
 }
 .centbox .listbox .cp {
   display: inline-block;
   width: 100%;
-  font-size: .9em;
+  font-size: .7em;
   color: white;
   line-height: 1.4em;
 }
 .centbox .partnersbox {
   display: inline-block;
-  width: 100%;
+  width: 800px;
   margin-top: 50px;
-  padding: 15px;
+  padding: 23px;
   border: 1px solid white;
   *zoom: 1;
   display: none;
@@ -243,10 +253,10 @@
   float: right;
 }
 .centbox .partnersbox .pal {
-  width: 40%;
+  width: 43%;
 }
 .centbox .partnersbox .par {
-  width: calc(100% - 40%);
+  width: calc(100% - 43%);
 }
 .centbox .partnersbox.partnershow {
   display: inline-block;
@@ -254,7 +264,7 @@
 .centbox .partnersbox .pal {
   display: inline-block;
   float: left;
-  height: 375px;
+  height: 380px;
   background-color: white;
 }
 .centbox .partnersbox .pal img {
@@ -270,9 +280,9 @@
   display: inline-block;
   width: 100%;
   margin: 0;
-  padding: 20px 0;
   color: #a3c014;
   text-align: left;
+  padding-bottom: 15px;
 }
 .centbox .partnersbox .par .paw01, .centbox .partnersbox .par .paw02, .centbox .partnersbox .par .paw03 {
   display: inline-block;
@@ -285,11 +295,14 @@
   text-align: left;
 }
 .centbox .partnersbox .par .pag01 {
-  font-size: 2em;
+  padding-top: 22px;
+  padding-bottom: 30px;
+  font-size: 1.8em;
 }
 .centbox .partnersbox .par .paw01 {
   font-size: 1em;
-  line-height: 1.6em;
+  line-height: 1.4em;
+  padding-bottom: 37px;
 }
 .centbox .partnersbox .par .pag02 {
   font-size: 1.4em;
@@ -311,27 +324,28 @@
   color: #a3c014;
 }
 .centbox .cgtype.biggreen {
+  padding-top: 80px;
   font-size: 1.6em;
   font-weight: bolder;
 }
 .centbox .contactbox {
   display: inline-block;
-  width: 80%;
+  width: 600px;
   margin-top: 30px;
   border: 1px solid white;
-  padding: 20px;
+  padding: 25px;
 }
 .centbox .contactbox .inputbox, .centbox .contactbox .inputbox02 {
   display: inline-block;
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   border: 0;
   outline: 0;
   font-size: 1em;
   color: #32393c;
 }
 .centbox .contactbox .inputbox {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .centbox .contactbox .inputbox02 {
   min-height: 300px;

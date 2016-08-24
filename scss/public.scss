@@ -6,9 +6,10 @@
 @import "_oa";
 
 @include font-face("Monaco", font-files("monaco/monaco.ttf", "monaco/monaco.otf"));
+@include font-face("gotham", font-files("gotham/gotham-book-webfont.eot", "gotham/gotham-book-webfont.svg", "gotham/gotham-book-webfont.ttf", "gotham/gotham-book-webfont.woff", "gotham/gotham-book-webfont.woff2"));
 @include font-face("icomoon", font-files("icomoon/icomoon.eot", "icomoon/icomoon.woff", "icomoon/icomoon.ttf", "icomoon/icomoon.svg"));
 [class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon', Monaco, "微軟正黑體", "Microsoft JhengHei";
+  font-family: 'icomoon', 'gotham', Monaco, "微軟正黑體", "Microsoft JhengHei";
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -18,6 +19,15 @@
 
   @include font-smoothing(antialiased);
 }
+
+.icon-chevron-thin-down:before {
+  content: "\e906";
+}
+.icon-chevron-thin-up:before {
+  content: "\e905";
+}
+
+
 
 .icon-dehaze:before {
   content: "\e3c7";
@@ -62,9 +72,10 @@ html {
     text-align: center;
     margin: 0;
     width: 100%;
+    min-width: 1200px;
     // height: 100%;
     font-size: medium;
-    font-family: "Roboto", "微軟正黑體", Monaco, "Microsoft JhengHei" ;
+    font-family: "gotham", "微軟正黑體", Monaco, "Microsoft JhengHei" ;
     background-color: rgba(255, 255, 255, 1.00);
     color: rgba(50, 50, 50, 0.8);
 
@@ -75,13 +86,14 @@ html {
 
 
     .outbox {
-      width: calc(100% - 20px * 2);
+      width: calc(100% - 40px * 2);
       min-width: 1200px;
-      margin: 0 20px;
-
+      margin: 0 40px;
 
       header {
         width: 100%;
+        padding-top: 32px;
+        padding-bottom: 15px;
         border-bottom: 10px solid rgba(173, 198, 46, 1.00);
 
         &.ngbar {
@@ -118,8 +130,8 @@ html {
 
           .click {
             display: inline-block;
-            margin-top: 50px;
-            padding-left: 15px;
+            margin-top: 70px;
+            padding: 0 15px;
             float: right;
             cursor: pointer;
 
@@ -132,8 +144,7 @@ html {
 
             &:before {
               float: left;
-              font-size: 1.3em;
-              font-weight: bolder;
+              font-size: 2em;
               padding-right: 10px;
               color: rgba(163, 192, 20, 1.00);
             }
@@ -143,6 +154,8 @@ html {
             }
 
             p {
+              font-weight: bolder;
+              padding-top: 6px;
               float: left;
               margin: 0;
               display: inline-block;
@@ -211,7 +224,7 @@ html {
         .x {
           display: inline-block;
           width: 100%;
-          padding: 53px 20px;
+          padding: 105px 46px 45px;
           cursor: pointer;
           text-align: right;
           font-weight: bolder;
@@ -234,7 +247,7 @@ html {
         .ncg {
           display: inline-block;
           width: 100%;
-          padding: 10px 20px;
+          padding: 10px 35px;
           background-color: rgba(163, 192, 20, 1.00);
 
           text-align: left;
@@ -245,7 +258,7 @@ html {
         .ncw {
           display: inline-block;
           width: 100%;
-          padding: 20px 20px;
+          padding: 20px 35px;
           cursor: pointer;
           border-bottom: 1px solid rgba(163, 192, 20, 1.00);
 
@@ -318,7 +331,7 @@ html {
         .banners {
           position: relative;
           width: 100%;
-          height: 500px;
+          height: 485px;
           overflow: hidden;
 
 
@@ -333,16 +346,16 @@ html {
                 .banner:nth-child(#{$j}) {
                   left: #{($j - $i) * 100%};
                 }
-              }   
+              }
               .points a:nth-child(#{$i}) {
-                background-color: rgba(240, 240, 240, 1.00);
+                background-color: rgba(173, 198, 46, 1.00);
               }
             }
           }
 
           .points {
             position: absolute;
-            bottom: 7%;
+            bottom: 45px;
             left: 0;
             display: inline-block;
             width: 100%;
@@ -355,21 +368,22 @@ html {
                 display: inline-block;
                 width: 15px;
                 height: 15px;
-                background-color: rgba(180, 180, 180, 1.00);
+                background-color: rgba(153, 155, 154, 1.00);
                 cursor: pointer;
                 @include transition(background-color .3s);
                 @include border-radius(50%);
 
                 + a {
-                  margin-left: 10px;
+                  margin-left: 20px;
                 }
 
                 &:hover {
-                  background-color: rgba(220, 220, 220, 1.00);
+                  background-color: rgba(173, 198, 46, 1.00);
                 }
               }
             }
           }
+
           .banner {
             position: absolute;
             left: 0;
@@ -378,7 +392,7 @@ html {
             width: 100%;
             height: 100%;
             @include transition(left .3s);
-            
+
             > .img, > a, > h2, > p {
               position: absolute;
               left: 0;
@@ -396,20 +410,23 @@ html {
             }
             > a {
               left: calc(50% - 200px / 2);
-              width: 200px;
+              width: 220px;
               height: 45px;
-              line-height: 45px - 2px;
+              line-height: 44px - 3px;
               margin: 0;
-              font-size: 16px;
+              font-size: 1em;
+              font-weight: bolder;
 
               text-decoration: none;
-              border: 2px solid rgba(255, 255, 255, 1.00);
-              
-              top: 28%;
+              border: 3px solid rgba(255, 255, 255, 1.00);
+
+              top: 25%;
               + h2 {
-                top: calc(28% + 45px + 10px);
+                top: calc(20% + 45px + 10px);
                 + p {
-                  top: calc(28% + 45px + 10px + 35px + 15px);
+                  font-size: 1.2em;
+                  line-height: 1.4em;
+                  top: calc(20% + 85px + 10px + 35px + 15px);
                 }
               }
             }
@@ -418,14 +435,19 @@ html {
               height: 35px;
               line-height: 35px - 2px;
               font-style: italic;
-              font-style: 30px;
+              font-size: 3.2em;
             }
             > p {
               height: auto;
               color: rgba(250, 250, 250, 1.00);
-              line-height: 20px;
+              line-height: 18px;
               a {
-                color: rgba(250, 250, 250, 1.00);
+                display: inline-block;
+                padding-top: 10px;
+                color: white;
+                &:hover {
+                  color: rgba(173, 198, 46, 1.00);
+                }
               }
             }
           }
@@ -433,8 +455,9 @@ html {
 
         .feature {
           width: 100%;
-          margin: 15px 0;
-          padding: 25px 15px;
+          height: 200px;
+          margin: 10px 0;
+          padding-top: 25px 15px;
 
           background-image: url(../img/green.png);
           background-repeat:repeat-y;
@@ -443,11 +466,15 @@ html {
           background-color:rgba(250, 248, 249, 1.00);
 
           p {
-            line-height: 1.4em;
-            margin: 15px 0;
+            margin: 0;
+            padding-top: 18px;
+            font-size: 1em;
+            line-height: 1.2em;
             color: rgba(49, 57, 64, 1.00);
 
             &.f01 {
+              padding-top: 45px;
+              padding-bottom: 0;
               font-size: 2em;
               font-weight: bolder;
             }
@@ -455,6 +482,8 @@ html {
 
           i {
             a{
+              display: inline-block;
+              padding-top: 20px;
               cursor: pointer;
               color: rgba(49, 57, 64, 1.00);
               text-decoration: underline;
@@ -475,18 +504,18 @@ html {
             float: left;
             width: calc(100% / 3 - 30px / 3);
 
-            padding: 10px;
+            padding: 8px;
 
             border: 2px solid rgba(146, 150, 151, 1.00);
 
             &:nth-child(3n + 2) {
-              margin: 0 15px;
+              margin: 0 13px;
             }
 
             .spb {
               display: inline-block;
               width: 100%;
-              height: 240px;
+              height: 235px;
               border: 0;
               cursor: pointer;
 
@@ -499,10 +528,11 @@ html {
             .stitle {
               display: inline-block;
               width: 100%;
-              padding: 10px 0;
+              padding-top: 15px;
+              padding-bottom: 25px;
               cursor: pointer;
 
-              font-size: 1.2em;
+              font-size: 1.4em;
               font-weight: bolder;
               text-align: left;
               text-decoration: none;
@@ -519,6 +549,8 @@ html {
               width: 100%;
               cursor: pointer;
 
+              font-size: 1em;
+              padding-bottom: 8px;
               text-align: left;
               color: rgba(175, 198, 44, 1.00);
 
@@ -562,7 +594,7 @@ html {
 
         .fgreen {
           width: 100%;
-          padding: 30px 100px;
+          padding: 30px 70px;
           background-color: rgba(175, 198, 44, 1.00);
 
           @include split-left(45%, '.fgl', '.fgr');
@@ -671,7 +703,7 @@ html {
 
                   float: right;
                   text-decoration: none;
-                  font-size: 2.4em;
+                  font-size: 2em;
                   color: white;
 
                   &:hover {
@@ -746,7 +778,9 @@ html {
 
         p {
           margin: 0;
-          padding: 25px 0;
+          padding-top: 35px;
+          padding-bottom: 42px;
+
 
           color: rgba(148, 148, 148, 1.00);
           text-align: left;
