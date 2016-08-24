@@ -314,6 +314,10 @@ html {
 
           background-color: rgba(25, 33, 34, .8);
 
+          &.hist {
+            padding-bottom: 150px;
+          }
+
           .middletitle {
             display: inline-block;
             width: 100%;

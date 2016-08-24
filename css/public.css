@@ -361,6 +361,9 @@ html body .outbox .middle .blackbg {
   padding-bottom: 75px;
   background-color: rgba(25, 33, 34, 0.8);
 }
+html body .outbox .middle .blackbg.hist {
+  padding-bottom: 150px;
+}
 html body .outbox .middle .blackbg .middletitle {
   display: inline-block;
   width: 100%;
