@@ -140,7 +140,6 @@ html body {
   margin: 0;
   width: 100%;
   min-width: 1200px;
-  font-size: medium;
   font-family: "gotham", "微軟正黑體", Monaco, "Microsoft JhengHei";
   background-color: white;
   color: rgba(50, 50, 50, 0.8);
@@ -369,8 +368,9 @@ html body .outbox .middle .blackbg .middletitle {
   width: 100%;
   padding: 75px 0;
   color: white;
-  font-size: 1.2em;
+  font-size: 11px;
   font-weight: bolder;
+  letter-spacing: 2pxl;
 }
 html body .outbox .middle .banners {
   position: relative;
@@ -843,7 +843,7 @@ html body .outbox .middle .banners .banner > p a:hover {
 }
 html body .outbox .middle .feature {
   width: 100%;
-  height: 200px;
+  height: 187px;
   margin: 10px 0;
   padding-top: 25px 15px;
   background-image: url(../img/green.png);
@@ -853,16 +853,19 @@ html body .outbox .middle .feature {
 }
 html body .outbox .middle .feature p {
   margin: 0;
-  padding-top: 18px;
-  font-size: 1em;
+  padding-top: 13px;
+  font-size: .9em;
   line-height: 1.2em;
   color: #313940;
 }
 html body .outbox .middle .feature p.f01 {
   padding-top: 45px;
   padding-bottom: 0;
-  font-size: 2em;
+  font-size: 1.9em;
   font-weight: bolder;
+}
+html body .outbox .middle .feature i {
+  font-size: .9em;
 }
 html body .outbox .middle .feature i a {
   display: inline-block;
@@ -888,7 +891,7 @@ html body .outbox .middle .services > div {
   float: left;
   width: calc(100% / 3 - 30px / 3);
   padding: 8px;
-  border: 2px solid #929697;
+  border: 1px solid #929697;
 }
 html body .outbox .middle .services > div:nth-child(3n + 2) {
   margin: 0 13px;
@@ -990,6 +993,7 @@ html body .outbox footer .fgreen .fgl > div {
 html body .outbox footer .fgreen .fgl > div .fblack {
   margin: 0;
   padding: 10px 0;
+  font-size: 10px;
   font-weight: bolder;
   color: #333a3b;
 }
@@ -1000,7 +1004,7 @@ html body .outbox footer .fgreen .fgl > div .fwhite {
   cursor: pointer;
   text-align: left;
   text-decoration: none;
-  font-size: .9em;
+  font-size: 10px;
   color: white;
 }
 html body .outbox footer .fgreen .fgl > div .fwhite:hover {
@@ -1173,6 +1177,7 @@ html body .outbox footer p {
   margin: 0;
   padding-top: 35px;
   padding-bottom: 42px;
+  font-size: 10pt;
   color: #949494;
   text-align: left;
 }
