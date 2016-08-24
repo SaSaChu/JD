@@ -84,6 +84,7 @@ $(function () {
       $(this).parent().removeClass('casebg01');
       $(this).parent().removeClass('C');
       $(this).parent().addClass('D');
+      $(this).parent().parent().siblings ().find ('.case_detail').filter ('.D').find ('.case_a01').click ();
     }
     else {
       $(this).parent().removeClass('D');
