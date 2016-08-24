@@ -9,7 +9,7 @@
 @include font-face("gotham", font-files("gotham/gotham-book-webfont.eot", "gotham/gotham-book-webfont.svg", "gotham/gotham-book-webfont.ttf", "gotham/gotham-book-webfont.woff", "gotham/gotham-book-webfont.woff2"));
 @include font-face("icomoon", font-files("icomoon/icomoon.eot", "icomoon/icomoon.woff", "icomoon/icomoon.ttf", "icomoon/icomoon.svg"));
 [class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon', 'gotham', Monaco, "微軟正黑體", "Microsoft JhengHei";
+  font-family: 'icomoon', 'gotham', "微軟正黑體", Monaco, "Microsoft JhengHei";
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -177,10 +177,10 @@ html {
               .list {
                 display: inline-block;;
                 z-index: 22;
-
                 position: absolute;
-                right: 0;
+                left: 48px;
                 top:20px;
+                width: 40px;
 
                 > a {
                   display: inline-block;
@@ -189,7 +189,6 @@ html {
                   color: rgba(57, 65, 70, 1.00);
                   text-decoration: none;
 
-                  border-top: 2px solid white;
 
                   &:hover {
                     color: rgba(163, 192, 20, 1.00);
