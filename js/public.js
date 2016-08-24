@@ -96,9 +96,9 @@ $(function () {
   // case
   $('.serviceboxs._c').each (function () {
     var $that = $(this);
-    $that.get (0).ori_h = $that.height () + 31 * 2;
+    $that.get (0).ori_h = $that.height () + 15 * 2;
     var cl = $that.find ('.case_detail').attr ('class');
-    $that.get (0).sh_h = $that.find ('.case_detail').attr ('class', 'case_detail D').height () + 31 * 2;
+    $that.get (0).sh_h = $that.find ('.case_detail').attr ('class', 'case_detail D').height () + 35 * 2;
     $that.find ('.case_detail').attr ('class', cl);
 
     $that.find ('.case_a01,.case_a03,.case_b06').click(function () {
