@@ -17,9 +17,9 @@ html body .outbox .middle.cbg {
   &:before {
     content: '';
     position: absolute;
-    top: 18px;
+    top: 48px;
     left: calc(50% - 2px / 2);
-    height: calc(100% - 18px - 70px);
+    height: calc(100% - 48px - 70px);
     display: inline-block;
     width: 2px;
     background-color: white;
