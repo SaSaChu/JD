@@ -102,7 +102,7 @@
 
       .case_a01 {
         font-weight: bolder;
-        padding: 40px 0;
+        padding: 40px 0 15px 0;
 
          &:hover {
           text-decoration: underline;
@@ -150,19 +150,27 @@
       }
 
       .case_b02 {
+        width: 90%;
         padding-bottom: 15px;
         font-size: 1.2em;
-        line-height: 1.6em;
+        line-height: 1.4em;
         color: rgba(163, 192, 20, 1.00);
       }
       .case_b03 {
-        line-height: 1.6em;
+        width: 90%;
+        line-height: 1.5em;
         padding: 30px 0;
+        font-size: .8em;
+
+        &.nomal {
+          font-size: 1em;
+        }
       }
       .case_b04 {
         text-decoration: underline;
         font-size: 1em;
         font-weight: bolder;
+        font-style: italic;
       }
 
       .case_b05 {

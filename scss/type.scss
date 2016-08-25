@@ -31,7 +31,7 @@
       padding-top: 30px;
 
       color: white;
-      font-size: 14px;
+      font-size: 14pt;
       line-height:1.4em;
     }
 
@@ -248,7 +248,7 @@
       .pal {
         display: inline-block;
         float: left;
-        height: 380px;
+        height: 325px;
         background-color: white;
 
         img {
@@ -284,8 +284,8 @@
 
 
         .pag01 {
-          padding-top: 22px;
-          padding-bottom: 30px;
+          padding-top: 15px;
+          padding-bottom: 20px;
           font-size: 1.8em;
         }
         .paw01 {
@@ -322,6 +322,11 @@
       &.biggreen {
         padding-top: 80px;
         font-size: 3em;
+        font-weight: bolder;
+      }
+
+      &.congreen {
+        font-size: 14pt;
         font-weight: bolder;
       }
     }

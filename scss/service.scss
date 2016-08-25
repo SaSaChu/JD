@@ -138,7 +138,7 @@
         padding-bottom: 35px;
         color: white;
         line-height: 1.5em;
-        font-size: 1.1em;
+        font-size: 1em;
       }
 
       .sc_b03 {
@@ -146,7 +146,7 @@
         width: 100%;
         margin-bottom: 50px;
 
-        @include split-left(50%, '.sc_cel', '.sc_cer');
+        @include split-left(45%, '.sc_cel', '.sc_cer');
 
         .sc_cel {
           float: left;
@@ -179,8 +179,8 @@
           }
           .sc_w {
             color: white;
-            line-height: 2em;
-            font-size: .9em;
+            line-height: 1.8em;
+            font-size: 1em;
           }
         }
 

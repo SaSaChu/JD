@@ -323,7 +323,7 @@ html {
             padding: 75px 0;
 
             color: white;
-            font-size: 11px;
+            font-size: 11pt;
             font-weight: bolder;
             letter-spacing: 2px;
           }
@@ -599,10 +599,10 @@ html {
 
         .fgreen {
           width: 100%;
-          padding: 30px 70px;
+          padding: 30px 70px 40px 70px;
           background-color: rgba(175, 198, 44, 1.00);
 
-          @include split-left(45%, '.fgl', '.fgr');
+          @include split-left(53%, '.fgl', '.fgr');
 
           .fgl {
 
@@ -610,12 +610,12 @@ html {
               float: left;
               width: calc(100% / 2);
               height: 145px;
-              margin-bottom: 35px;
+              margin-bottom: 30px;
 
               .fblack {
                 margin: 0;
                 padding: 10px 0;
-                font-size: 10px;
+                font-size: 10pt;
                 font-weight: bolder;
                 color: rgba(51, 58, 59, 1.00);
               }
@@ -628,7 +628,7 @@ html {
                 cursor: pointer;
                 text-align: left;
                 text-decoration: none;
-                font-size: 10px;
+                font-size: 10pt;
 
                 color: white;
 
@@ -641,7 +641,7 @@ html {
           }
 
           .fgr {
-            padding-left: 75px;
+            padding-left: 10px;
 
             .fl01 {
               display: inline-block;

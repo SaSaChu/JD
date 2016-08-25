@@ -67,7 +67,7 @@
   margin: 0;
   padding-top: 30px;
   color: white;
-  font-size: 14px;
+  font-size: 14pt;
   line-height: 1.4em;
 }
 
@@ -264,7 +264,7 @@
 .centbox .partnersbox .pal {
   display: inline-block;
   float: left;
-  height: 380px;
+  height: 325px;
   background-color: white;
 }
 .centbox .partnersbox .pal img {
@@ -295,8 +295,8 @@
   text-align: left;
 }
 .centbox .partnersbox .par .pag01 {
-  padding-top: 22px;
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 20px;
   font-size: 1.8em;
 }
 .centbox .partnersbox .par .paw01 {
@@ -326,6 +326,10 @@
 .centbox .cgtype.biggreen {
   padding-top: 80px;
   font-size: 3em;
+  font-weight: bolder;
+}
+.centbox .cgtype.congreen {
+  font-size: 14pt;
   font-weight: bolder;
 }
 .centbox .contactbox {

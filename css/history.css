@@ -97,6 +97,7 @@ html body .outbox .middle.cbg {
 .centbox h3 {
   color: #adc62e;
   margin-top: 30px;
+  margin-bottom: 0;
   font-size: 40px;
 }
 .centbox .left, .centbox .right {
