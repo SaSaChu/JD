@@ -190,6 +190,7 @@
   padding-bottom: 20px;
   font-size: 2em;
   color: white;
+  width: 100%;
   cursor: pointer;
 }
 .centbox .serviceboxs .case_detail .case_b06:hover {
