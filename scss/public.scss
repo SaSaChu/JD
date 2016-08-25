@@ -543,6 +543,17 @@ html {
               text-decoration: none;
               color: rgba(50, 58, 62, 1.00);
 
+              &.cn-stitle {
+                padding-bottom: 0;
+              }
+
+              &.cn-stitle_en {
+                font-size: .9em;
+                padding-top: 10px;
+                font-weight: thin;
+              }
+
+
               &:hover {
                 color: rgba(175, 198, 44, 1.00);
               }

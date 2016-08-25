@@ -915,6 +915,14 @@ html body .outbox .middle .services > div .stitle {
   text-decoration: none;
   color: #323a3e;
 }
+html body .outbox .middle .services > div .stitle.cn-stitle {
+  padding-bottom: 0;
+}
+html body .outbox .middle .services > div .stitle.cn-stitle_en {
+  font-size: .9em;
+  padding-top: 10px;
+  font-weight: thin;
+}
 html body .outbox .middle .services > div .stitle:hover {
   color: #afc62c;
 }

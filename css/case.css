@@ -118,6 +118,10 @@
   font-weight: bolder;
   padding: 40px 0 15px 0;
 }
+.centbox .serviceboxs .case_detail .case_a01.cn_casea01 {
+  padding: 60px 0 15px 0;
+  font-style: normal;
+}
 .centbox .serviceboxs .case_detail .case_a01:hover {
   text-decoration: underline;
 }
@@ -163,11 +167,15 @@
 .centbox .serviceboxs .case_detail .case_b03 {
   width: 90%;
   line-height: 1.5em;
-  padding: 30px 0;
+  padding: 20px 0;
   font-size: .8em;
 }
 .centbox .serviceboxs .case_detail .case_b03.nomal {
   font-size: 1em;
+}
+.centbox .serviceboxs .case_detail .case_b03.cn_fontsize {
+  padding-top: 15px;
+  font-size: 16px;
 }
 .centbox .serviceboxs .case_detail .case_b04 {
   text-decoration: underline;
