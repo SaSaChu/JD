@@ -36,6 +36,7 @@ $(function () {
     if ($(this).parent().hasClass('A')) {
       $(this).parent().removeClass('A');
       $(this).parent().addClass('B');
+      $(this).parent().parent().siblings ().find ('.sc_detail').filter ('.B').find ('.sc_a03').click ();
     }
     else  {
       $(this).parent().removeClass('B');
