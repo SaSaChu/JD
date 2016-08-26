@@ -72,7 +72,6 @@ html {
     text-align: center;
     margin: 0;
     width: 100%;
-    min-width: 1200px;
     // height: 100%;
     // font-size: medium;
     font-family: "gotham", "微軟正黑體", Monaco, "Microsoft JhengHei" ;
@@ -85,10 +84,79 @@ html {
     @include font-smoothing(antialiased);
 
 
+    #navbox {
+      position: absolute;
+      top: 0;
+      right: -30%;
+      width: 30%;
+      height: 100%;
+      background-color: rgba(251, 251, 251, .9);
+      display: inline-block;
+
+      z-index: 3;
+      @include transition(all .3s);
+
+      &.sn {
+        right: 0;
+      }
+
+      .x {
+        display: inline-block;
+        width: 100%;
+        padding: 105px 46px 45px;
+        cursor: pointer;
+        text-align: right;
+        font-weight: bolder;
+
+        &:before {
+          display: inline-block;
+          text-decoration: none;
+          color: rgba(163, 192, 20, 1.00);
+          padding-right: 8px;
+          font-size: 1.3em;
+        }
+
+        &:hover {
+          text-decoration: underline;
+          color: rgba(163, 192, 20, 1.00);
+        }
+
+      }
+
+      .ncg {
+        display: inline-block;
+        width: 100%;
+        padding: 10px 35px;
+        background-color: rgba(163, 192, 20, 1.00);
+
+        text-align: left;
+        color: rgba(58, 67, 70, 1.00);
+        font-weight: bolder;
+      }
+
+      .ncw {
+        display: inline-block;
+        width: 100%;
+        padding: 20px 35px;
+        cursor: pointer;
+        border-bottom: 1px solid rgba(163, 192, 20, 1.00);
+
+        text-align: left;
+        text-decoration: none;
+        color: rgba(58, 67, 70, 1.00);
+
+        &:hover {
+          text-decoration: underline;
+          color: rgba(163, 192, 20, 1.00);
+        }
+      }
+    }
+
+
     .outbox {
       width: calc(100% - 40px * 2);
-      min-width: 1200px;
-      margin: 0 40px;
+      margin: 0 auto;
+      overflow: hidden;
 
       header {
         width: 100%;
@@ -203,74 +271,6 @@ html {
 
       }
 
-
-
-      #navbox {
-        position: absolute;
-        top: 0;
-        right: -30%;
-        width: 30%;
-        height: 100%;
-        background-color: rgba(251, 251, 251, .9);
-
-        z-index: 3;
-        @include transition(all .3s);
-
-        &.sn {
-          right: 0;
-        }
-
-        .x {
-          display: inline-block;
-          width: 100%;
-          padding: 105px 46px 45px;
-          cursor: pointer;
-          text-align: right;
-          font-weight: bolder;
-
-          &:before {
-            display: inline-block;
-            text-decoration: none;
-            color: rgba(163, 192, 20, 1.00);
-            padding-right: 8px;
-            font-size: 1.3em;
-          }
-
-          &:hover {
-            text-decoration: underline;
-            color: rgba(163, 192, 20, 1.00);
-          }
-
-        }
-
-        .ncg {
-          display: inline-block;
-          width: 100%;
-          padding: 10px 35px;
-          background-color: rgba(163, 192, 20, 1.00);
-
-          text-align: left;
-          color: rgba(58, 67, 70, 1.00);
-          font-weight: bolder;
-        }
-
-        .ncw {
-          display: inline-block;
-          width: 100%;
-          padding: 20px 35px;
-          cursor: pointer;
-          border-bottom: 1px solid rgba(163, 192, 20, 1.00);
-
-          text-align: left;
-          text-decoration: none;
-          color: rgba(58, 67, 70, 1.00);
-
-          &:hover {
-            text-decoration: underline;
-            color: rgba(163, 192, 20, 1.00);
-          }
-        }
-      }
 
 
       #cover {
@@ -812,5 +812,28 @@ html {
     }
 
 
+  }
+}
+
+
+// @media screen and (min-width: 0) and (max-width: #{1200px - 1px}) {
+//   html body .outbox {
+//       margin: 0 !important;
+//       overflow: hidden;
+//   }
+// }
+@media screen and (min-width: 0) and (max-width: #{1200px - 1px}) {
+  html {
+    display: inline-block;
+    min-width: 1200px;
+    overflow: hidden;
+    
+    body {
+      width: 1200px;
+
+      .outbox {
+        width: 1200px;
+      }
+    }
   }
 }

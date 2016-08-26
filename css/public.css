@@ -49,11 +49,11 @@
  */
 @font-face {
   font-family: "Monaco";
-  src: url('/JD/font/monaco/monaco.ttf?1470839577') format('truetype'), url('/JD/font/monaco/monaco.otf?1470839577') format('opentype');
+  src: url('/JD/font/monaco/monaco.ttf?1471709356') format('truetype'), url('/JD/font/monaco/monaco.otf?1471709356') format('opentype');
 }
 @font-face {
   font-family: "icomoon";
-  src: url('/JD/font/icomoon/icomoon.eot?1472015256') format('embedded-opentype'), url('/JD/font/icomoon/icomoon.woff?1472015256') format('woff'), url('/JD/font/icomoon/icomoon.ttf?1472015256') format('truetype'), url('/JD/font/icomoon/icomoon.svg?1472015256') format('svg');
+  src: url('/JD/font/icomoon/icomoon.eot?1472020818') format('embedded-opentype'), url('/JD/font/icomoon/icomoon.woff?1472020818') format('woff'), url('/JD/font/icomoon/icomoon.ttf?1472020818') format('truetype'), url('/JD/font/icomoon/icomoon.svg?1472020818') format('svg');
 }
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon', 'gotham', "微軟正黑體", Monaco, "Microsoft JhengHei";
@@ -135,7 +135,6 @@ html body {
   text-align: center;
   margin: 0;
   width: 100%;
-  min-width: 1200px;
   font-family: "gotham", "微軟正黑體", Monaco, "Microsoft JhengHei";
   background-color: white;
   color: rgba(50, 50, 50, 0.8);
@@ -147,10 +146,69 @@ html body {
   -ms-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
 }
+html body #navbox {
+  position: absolute;
+  top: 0;
+  right: -30%;
+  width: 30%;
+  height: 100%;
+  background-color: rgba(251, 251, 251, 0.9);
+  display: inline-block;
+  z-index: 3;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+html body #navbox.sn {
+  right: 0;
+}
+html body #navbox .x {
+  display: inline-block;
+  width: 100%;
+  padding: 105px 46px 45px;
+  cursor: pointer;
+  text-align: right;
+  font-weight: bolder;
+}
+html body #navbox .x:before {
+  display: inline-block;
+  text-decoration: none;
+  color: #a3c014;
+  padding-right: 8px;
+  font-size: 1.3em;
+}
+html body #navbox .x:hover {
+  text-decoration: underline;
+  color: #a3c014;
+}
+html body #navbox .ncg {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 35px;
+  background-color: #a3c014;
+  text-align: left;
+  color: #3a4346;
+  font-weight: bolder;
+}
+html body #navbox .ncw {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 35px;
+  cursor: pointer;
+  border-bottom: 1px solid #a3c014;
+  text-align: left;
+  text-decoration: none;
+  color: #3a4346;
+}
+html body #navbox .ncw:hover {
+  text-decoration: underline;
+  color: #a3c014;
+}
 html body .outbox {
   width: calc(100% - 40px * 2);
-  min-width: 1200px;
-  margin: 0 40px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 html body .outbox header {
   width: 100%;
@@ -264,64 +322,6 @@ html body .outbox header .hr .click:hover .list > a {
   text-decoration: none;
 }
 html body .outbox header .hr .click:hover .list > a:hover {
-  color: #a3c014;
-}
-html body .outbox #navbox {
-  position: absolute;
-  top: 0;
-  right: -30%;
-  width: 30%;
-  height: 100%;
-  background-color: rgba(251, 251, 251, 0.9);
-  z-index: 3;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-html body .outbox #navbox.sn {
-  right: 0;
-}
-html body .outbox #navbox .x {
-  display: inline-block;
-  width: 100%;
-  padding: 105px 46px 45px;
-  cursor: pointer;
-  text-align: right;
-  font-weight: bolder;
-}
-html body .outbox #navbox .x:before {
-  display: inline-block;
-  text-decoration: none;
-  color: #a3c014;
-  padding-right: 8px;
-  font-size: 1.3em;
-}
-html body .outbox #navbox .x:hover {
-  text-decoration: underline;
-  color: #a3c014;
-}
-html body .outbox #navbox .ncg {
-  display: inline-block;
-  width: 100%;
-  padding: 10px 35px;
-  background-color: #a3c014;
-  text-align: left;
-  color: #3a4346;
-  font-weight: bolder;
-}
-html body .outbox #navbox .ncw {
-  display: inline-block;
-  width: 100%;
-  padding: 20px 35px;
-  cursor: pointer;
-  border-bottom: 1px solid #a3c014;
-  text-align: left;
-  text-decoration: none;
-  color: #3a4346;
-}
-html body .outbox #navbox .ncw:hover {
-  text-decoration: underline;
   color: #a3c014;
 }
 html body .outbox #cover {
@@ -1184,4 +1184,18 @@ html body .outbox footer p {
   font-size: 10pt;
   color: #949494;
   text-align: left;
+}
+
+@media screen and (min-width: 0) and (max-width: 1199px) {
+  html {
+    display: inline-block;
+    min-width: 1200px;
+    overflow: hidden;
+  }
+  html body {
+    width: 1200px;
+  }
+  html body .outbox {
+    width: 1200px;
+  }
 }
