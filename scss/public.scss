@@ -298,11 +298,16 @@ html {
           display: block;
           width: 100%;
           height: 100%;
-          background-image: url(../img/305195807.jpg);
-          background-position: 50% 0%;
-          background-size: cover;
-          -moz-background-size: cover;
+          background-attachment: fixed;
           background-repeat: no-repeat;
+          background-position: 50% 50%;
+          background-image: url(../img/background_big.jpg);
+          background-color: #ccc;
+          // background-image: url(../img/background_big.jpg);
+          // background-position: 50% 0%;
+          // background-size: cover;
+          // -moz-background-size: cover;
+          // background-repeat: no-repeat;
         }
 
         // 內頁樣式
@@ -311,7 +316,7 @@ html {
           width: 100%;
           padding-bottom: 75px;
 
-          background-color: rgba(25, 33, 34, .8);
+          background-color: rgba(25, 33, 34, .9);
 
           &.hist {
             padding-bottom: 150px;
