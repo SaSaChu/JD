@@ -68,6 +68,13 @@
   background-size: cover;
   -moz-background-size: cover;
 }
+.centbox .serviceboxs .case_detail.casebg01.casebg02 {
+  height: 235px;
+  background-image: url(../img/c_cover_02.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  -moz-background-size: cover;
+}
 .centbox .serviceboxs .case_detail.casebg01:hover {
   position: relative;
 }

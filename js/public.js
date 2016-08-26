@@ -69,7 +69,7 @@ $(function () {
       }
     });
   });
-  
+
 
   // $('.case_detail').hover(function(){
   //   $(this).removeClass('D');
@@ -93,6 +93,8 @@ $(function () {
       $(this).parent().addClass('C');
     }
   });
+
+
 
 
   // case

@@ -34,6 +34,14 @@
         background-size: cover;
         -moz-background-size: cover;
 
+        &.casebg02 {
+          height: 235px;
+          background-image: url(../img/c_cover_02.jpg);
+          background-position: 50% 50%;
+          background-size: cover;
+          -moz-background-size: cover;
+        }
+
         &:hover {
         position: relative;
 
@@ -57,6 +65,8 @@
         }
 
       }
+
+
 
     }
 
