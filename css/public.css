@@ -126,9 +126,6 @@
   background-color: #96c8ff;
 }
 
-html {
-  height: 100%;
-}
 html body {
   position: relative;
   display: inline-block;
