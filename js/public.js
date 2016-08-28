@@ -177,6 +177,50 @@ $(function () {
     $('.banners').data ('n', n).attr ('class', 'banners n' + n);
   }, 7000);
 
+
+  $('#send_btn').click (function () {
+    var content = $('#send_content').val ();
+    if (!content.length) return false;
+
+    $.ajax ({
+      url: 'mail/a.php',
+      data: {
+        content: content,
+      },
+      async: true, cache: false, dataType: 'json', type: 'post',
+      beforeSend: function () { }
+    })
+    .done (function () {  })
+    .fail (function (result) { console.error (result.responseText); })
+    .complete (function (result) { $('#send_content').val (''); });
+  });
+
+  $('#contact_send').click (function () {
+    var name = $('#contact_name').val ();
+    var mail = $('#contact_mail').val ();
+    var content = $('#contact_content').val ();
+
+    if (!name.length && !mail.length && !content.length) return false;
+
+    $.ajax ({
+      url: 'mail/b.php',
+      data: {
+        name: name,
+        mail: mail,
+        content: content,
+      },
+      async: true, cache: false, dataType: 'json', type: 'post',
+      beforeSend: function () { }
+    })
+    .done (function () {  })
+    .fail (function (result) { console.error (result.responseText); })
+    .complete (function (result) {
+      $('#contact_name').val ('');
+      $('#contact_mail').val ('');
+      $('#contact_content').val ('');
+    });
+  });
+
 });
 
 
