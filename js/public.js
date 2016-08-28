@@ -48,7 +48,7 @@ $(function () {
   $('.serviceboxs._s').each (function () {
     var $that = $(this);
     $that.get (0).ori_h = $that.height () + 31 * 2;
-    $that.get (0).sh_h = $that.find ('.sc_detail').addClass ('B').height () + 31 * 2;
+    $that.get (0).sh_h = $that.data ('add') + 70;
     $that.find ('.sc_detail').removeClass ('B');
 
     $that.find ('.sc_a03,.sc_a01,.sc_b04').click(function () {
@@ -102,7 +102,7 @@ $(function () {
     var $that = $(this);
     $that.get (0).ori_h = $that.height () + 15 * 2;
     var cl = $that.find ('.case_detail').attr ('class');
-    $that.get (0).sh_h = $that.find ('.case_detail').attr ('class', 'case_detail D').height () + $that.data ('add');
+    $that.get (0).sh_h = $that.data ('add') + 70;
     $that.find ('.case_detail').attr ('class', cl);
 
     $that.find ('.case_a01,.case_a03,.case_b06').click(function () {
