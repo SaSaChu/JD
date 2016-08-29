@@ -2,6 +2,7 @@
 sftp-config*
 
 cmd/.sass-cache/*
+mail/config.php
 
 cmd/node_modules/*
 cmd/npm-debug.log

@@ -48,7 +48,7 @@ $(function () {
   $('.serviceboxs._s').each (function () {
     var $that = $(this);
     $that.get (0).ori_h = $that.height () + 31 * 2;
-    $that.get (0).sh_h = $that.find ('.sc_detail').addClass ('B').height () + 31 * 2;
+    $that.get (0).sh_h = $that.data ('add') + 70;
     $that.find ('.sc_detail').removeClass ('B');
 
     $that.find ('.sc_a03,.sc_a01,.sc_b04').click(function () {
@@ -102,7 +102,7 @@ $(function () {
     var $that = $(this);
     $that.get (0).ori_h = $that.height () + 15 * 2;
     var cl = $that.find ('.case_detail').attr ('class');
-    $that.get (0).sh_h = $that.find ('.case_detail').attr ('class', 'case_detail D').height () + $that.data ('add');
+    $that.get (0).sh_h = $that.data ('add') + 70;
     $that.find ('.case_detail').attr ('class', cl);
 
     $that.find ('.case_a01,.case_a03,.case_b06').click(function () {
@@ -176,6 +176,50 @@ $(function () {
     n = (n + 1 > l ? 0 : n) + 1;
     $('.banners').data ('n', n).attr ('class', 'banners n' + n);
   }, 7000);
+
+
+  $('#send_btn').click (function () {
+    var content = $('#send_content').val ();
+    if (!content.length) return false;
+
+    $.ajax ({
+      url: 'mail/a.php',
+      data: {
+        content: content,
+      },
+      async: true, cache: false, dataType: 'json', type: 'post',
+      beforeSend: function () { }
+    })
+    .done (function () {  })
+    .fail (function (result) { console.error (result.responseText); })
+    .complete (function (result) { $('#send_content').val (''); });
+  });
+
+  $('#contact_send').click (function () {
+    var name = $('#contact_name').val ();
+    var mail = $('#contact_mail').val ();
+    var content = $('#contact_content').val ();
+
+    if (!name.length && !mail.length && !content.length) return false;
+
+    $.ajax ({
+      url: 'mail/b.php',
+      data: {
+        name: name,
+        mail: mail,
+        content: content,
+      },
+      async: true, cache: false, dataType: 'json', type: 'post',
+      beforeSend: function () { }
+    })
+    .done (function () {  })
+    .fail (function (result) { console.error (result.responseText); })
+    .complete (function (result) {
+      $('#contact_name').val ('');
+      $('#contact_mail').val ('');
+      $('#contact_content').val ('');
+    });
+  });
 
 });
 

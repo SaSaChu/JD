@@ -126,9 +126,6 @@
   background-color: #96c8ff;
 }
 
-html {
-  height: 100%;
-}
 html body {
   position: relative;
   display: inline-block;
@@ -1191,6 +1188,7 @@ html body .outbox footer p {
     display: inline-block;
     min-width: 1200px;
     overflow: hidden;
+    overflow-y: auto;
   }
   html body {
     width: 1200px;
