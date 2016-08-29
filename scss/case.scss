@@ -181,6 +181,7 @@
           font-size: 1em;
         }
 
+
         &.cn_fontsize {
           padding-top: 15px;
           font-size: 16px;
@@ -191,10 +192,11 @@
         font-size: 1em;
         font-weight: bolder;
         font-style: italic;
+        margin-top: 15px;
       }
 
       .case_b05 {
-        width: 100%;
+        width: 90%;
         height: 150px;
         margin-bottom: 30px;
         img {
@@ -208,7 +210,7 @@
         margin: 0;
         padding-bottom: 20px;
         font-size: 2em;
-        color: white;
+        color: rgba(173, 198, 46, 1.00);
         width: 100%;
         cursor: pointer;
 
@@ -234,3 +236,7 @@
 
 
 
+
+.f08 {
+  font-size: .8em !important;
+}

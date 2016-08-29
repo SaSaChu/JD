@@ -54,6 +54,7 @@ html body .outbox .middle.cbg {
 .centbox {
   position: relative;
   padding: 0 80px;
+  width: 1075px;
   *zoom: 1;
 }
 .centbox:after {
@@ -65,9 +66,9 @@ html body .outbox .middle.cbg {
 .centbox:before {
   content: '';
   position: absolute;
-  top: 48px;
+  top: 20px;
   left: calc(50% - 2px / 2);
-  height: calc(100% - 48px - 70px);
+  height: calc(100% - 20px - 70px);
   display: inline-block;
   width: 2px;
   background-color: white;
@@ -167,4 +168,12 @@ html body .outbox .middle.cbg {
   content: '>';
   left: 0;
   right: auto;
+}
+
+.s1 img {
+  height: 205px;
+}
+
+.centbox.cn .left .box p:before, .centbox.cn .right .box p:before {
+  top: 0;
 }

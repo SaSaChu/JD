@@ -107,14 +107,16 @@ html {
         text-align: right;
         font-weight: bolder;
 
-        &:before {
+        @include clearfix();
+        * {
           display: inline-block;
-          text-decoration: none;
-          color: rgba(163, 192, 20, 1.00);
-          padding-right: 8px;
-          font-size: 1.3em;
+          float: right;
         }
 
+        img {
+          margin-top: 13px;
+          margin-right: 2px;
+        }
         &:hover {
           text-decoration: underline;
           color: rgba(163, 192, 20, 1.00);
@@ -371,6 +373,7 @@ html {
             div {
               display: inline-block;
               @include clearfix();
+              
               a {
                 float: left;
                 display: inline-block;
@@ -400,7 +403,9 @@ html {
             width: 100%;
             height: 100%;
             @include transition(left .3s);
-
+            > h2 {
+              font-weight: bolder;
+            }
             > .img, > a, > h2, > p {
               position: absolute;
               left: 0;
@@ -409,7 +414,7 @@ html {
               width: 100%;
               height: 100%;
               color: rgba(255, 255, 255, 1.00);
-              @include text-shadow(0 0 1px rgba(39, 40, 34, .10));
+              // @include text-shadow(0 0 1px rgba(39, 40, 34, .10));
             }
             > .img {
               img {
@@ -453,6 +458,7 @@ html {
                 display: inline-block;
                 padding-top: 10px;
                 color: white;
+                font-style: italic !important;
                 &:hover {
                   color: rgba(173, 198, 46, 1.00);
                 }
@@ -534,19 +540,31 @@ html {
               }
             }
 
-            .stitle {
+            .stitle, .sread {
+              text-align: left;
               display: inline-block;
               width: 100%;
+            }
+            .stitle {
               padding-top: 15px;
               padding-bottom: 25px;
-              cursor: pointer;
 
-              font-size: 1.4em;
-              font-weight: bolder;
-              text-align: left;
-              text-decoration: none;
-              color: rgba(50, 58, 62, 1.00);
-
+              
+              
+              
+              
+              
+              a {
+                cursor: pointer;
+                font-size: 1.4em;
+                font-weight: bolder;
+                text-align: left;
+                text-decoration: none;
+                color: rgba(50, 58, 62, 1.00);  
+                &:hover {
+                  color: rgba(175, 198, 44, 1.00);
+                }
+              }
               &.cn-stitle {
                 padding-bottom: 0;
               }
@@ -558,24 +576,23 @@ html {
               }
 
 
-              &:hover {
-                color: rgba(175, 198, 44, 1.00);
-              }
 
             }
 
             .sread {
-              display: inline-block;
-              width: 100%;
-              cursor: pointer;
+              padding-bottom: 10px;
 
-              font-size: 1em;
-              padding-bottom: 8px;
-              text-align: left;
-              color: rgba(175, 198, 44, 1.00);
+              a {
+                cursor: pointer;
 
-              &:hover {
-                color: rgba(50, 58, 62, 1.00);
+                font-size: 14px;
+                padding-bottom: 8px;
+                text-align: left;
+                color: rgba(175, 198, 44, 1.00);
+
+                &:hover {
+                  color: rgba(50, 58, 62, 1.00);
+                }
               }
             }
           }
@@ -614,7 +631,7 @@ html {
 
         .fgreen {
           width: 100%;
-          padding: 30px 70px 40px 70px;
+          padding: 32px 70px 7px 70px;
           background-color: rgba(175, 198, 44, 1.00);
 
           @include split-left(53%, '.fgl', '.fgr');
@@ -625,11 +642,13 @@ html {
               float: left;
               width: calc(100% / 2);
               height: 145px;
-              margin-bottom: 30px;
+              &:nth-child(n+3) {
+                margin-top: 6px;
+              }
 
               .fblack {
                 margin: 0;
-                padding: 10px 0;
+                padding: 0;
                 font-size: 10pt;
                 font-weight: bolder;
                 color: rgba(51, 58, 59, 1.00);
@@ -675,6 +694,7 @@ html {
               display: inline-block;
               width: 100%;
               padding: 10px 0;
+              font-size: 10pt;
 
               color: white;
               text-align: left;
@@ -764,7 +784,7 @@ html {
                   outline: 0;
                   padding: 10px;
 
-                  font-size: 1em;
+                  font-size: 0.8em;
                   font-weight: bolder;
                   color: rgba(50, 57, 60, 1.00);
                 }
@@ -835,5 +855,38 @@ html {
         width: 1200px;
       }
     }
+  }
+}
+.cnx {
+  font-size: 1.2em !important;
+}
+.cna {
+  height: 190px !important;
+}
+
+.navboxout {
+  @include clearfix();
+  > * {
+    float: left;
+    display: inline-block;
+  }
+  img {
+    margin-top: 3px;
+    margin-right: 10px;
+  }
+}
+.icon-language {
+  width: 95px;
+  &:before {
+    margin-top: -2px;
+  }
+}
+
+
+.Raleway {
+  font-family: 'Raleway', "gotham", "微軟正黑體", Monaco, "Microsoft JhengHei" !important;
+
+  &[class^="icon-"], &[class*=" icon-"] {
+    font-family: 'icomoon', 'Raleway', "gotham", "微軟正黑體", Monaco, "Microsoft JhengHei" !important;
   }
 }

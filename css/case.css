@@ -189,9 +189,10 @@
   font-size: 1em;
   font-weight: bolder;
   font-style: italic;
+  margin-top: 15px;
 }
 .centbox .serviceboxs .case_detail .case_b05 {
-  width: 100%;
+  width: 90%;
   height: 150px;
   margin-bottom: 30px;
 }
@@ -204,10 +205,14 @@
   margin: 0;
   padding-bottom: 20px;
   font-size: 2em;
-  color: white;
+  color: #adc62e;
   width: 100%;
   cursor: pointer;
 }
 .centbox .serviceboxs .case_detail .case_b06:hover {
   color: #a3c014;
+}
+
+.f08 {
+  font-size: .8em !important;
 }

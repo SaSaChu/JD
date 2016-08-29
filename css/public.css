@@ -167,13 +167,21 @@ html body #navbox .x {
   cursor: pointer;
   text-align: right;
   font-weight: bolder;
+  *zoom: 1;
 }
-html body #navbox .x:before {
+html body #navbox .x:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+html body #navbox .x * {
   display: inline-block;
-  text-decoration: none;
-  color: #a3c014;
-  padding-right: 8px;
-  font-size: 1.3em;
+  float: right;
+}
+html body #navbox .x img {
+  margin-top: 13px;
+  margin-right: 2px;
 }
 html body #navbox .x:hover {
   text-decoration: underline;
@@ -781,6 +789,9 @@ html body .outbox .middle .banners .banner {
   -webkit-transition: left 0.3s;
   transition: left 0.3s;
 }
+html body .outbox .middle .banners .banner > h2 {
+  font-weight: bolder;
+}
 html body .outbox .middle .banners .banner > .img, html body .outbox .middle .banners .banner > a, html body .outbox .middle .banners .banner > h2, html body .outbox .middle .banners .banner > p {
   position: absolute;
   left: 0;
@@ -789,7 +800,6 @@ html body .outbox .middle .banners .banner > .img, html body .outbox .middle .ba
   width: 100%;
   height: 100%;
   color: white;
-  text-shadow: 0 0 1px rgba(39, 40, 34, 0.1);
 }
 html body .outbox .middle .banners .banner > .img img {
   width: 100%;
@@ -830,6 +840,7 @@ html body .outbox .middle .banners .banner > p a {
   display: inline-block;
   padding-top: 10px;
   color: white;
+  font-style: italic !important;
 }
 html body .outbox .middle .banners .banner > p a:hover {
   color: #adc62e;
@@ -900,17 +911,25 @@ html body .outbox .middle .services > div .spb img {
   max-width: 100%;
   height: 100%;
 }
-html body .outbox .middle .services > div .stitle {
+html body .outbox .middle .services > div .stitle, html body .outbox .middle .services > div .sread {
+  text-align: left;
   display: inline-block;
   width: 100%;
+}
+html body .outbox .middle .services > div .stitle {
   padding-top: 15px;
   padding-bottom: 25px;
+}
+html body .outbox .middle .services > div .stitle a {
   cursor: pointer;
   font-size: 1.4em;
   font-weight: bolder;
   text-align: left;
   text-decoration: none;
   color: #323a3e;
+}
+html body .outbox .middle .services > div .stitle a:hover {
+  color: #afc62c;
 }
 html body .outbox .middle .services > div .stitle.cn-stitle {
   padding-bottom: 0;
@@ -920,19 +939,17 @@ html body .outbox .middle .services > div .stitle.cn-stitle_en {
   padding-top: 10px;
   font-weight: thin;
 }
-html body .outbox .middle .services > div .stitle:hover {
-  color: #afc62c;
-}
 html body .outbox .middle .services > div .sread {
-  display: inline-block;
-  width: 100%;
+  padding-bottom: 10px;
+}
+html body .outbox .middle .services > div .sread a {
   cursor: pointer;
-  font-size: 1em;
+  font-size: 14px;
   padding-bottom: 8px;
   text-align: left;
   color: #afc62c;
 }
-html body .outbox .middle .services > div .sread:hover {
+html body .outbox .middle .services > div .sread a:hover {
   color: #323a3e;
 }
 html body .outbox footer {
@@ -961,7 +978,7 @@ html body .outbox footer #to_top:before {
 }
 html body .outbox footer .fgreen {
   width: 100%;
-  padding: 30px 70px 40px 70px;
+  padding: 32px 70px 7px 70px;
   background-color: #afc62c;
   *zoom: 1;
 }
@@ -989,11 +1006,13 @@ html body .outbox footer .fgreen .fgl > div {
   float: left;
   width: calc(100% / 2);
   height: 145px;
-  margin-bottom: 30px;
+}
+html body .outbox footer .fgreen .fgl > div:nth-child(n+3) {
+  margin-top: 6px;
 }
 html body .outbox footer .fgreen .fgl > div .fblack {
   margin: 0;
-  padding: 10px 0;
+  padding: 0;
   font-size: 10pt;
   font-weight: bolder;
   color: #333a3b;
@@ -1035,6 +1054,7 @@ html body .outbox footer .fgreen .fgr .fl02 {
   display: inline-block;
   width: 100%;
   padding: 10px 0;
+  font-size: 10pt;
   color: white;
   text-align: left;
 }
@@ -1151,7 +1171,7 @@ html body .outbox footer .fgreen .fgr .fl04 .fl041 .i {
   border: 0;
   outline: 0;
   padding: 10px;
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: bolder;
   color: #32393c;
 }
@@ -1196,4 +1216,43 @@ html body .outbox footer p {
   html body .outbox {
     width: 1200px;
   }
+}
+.cnx {
+  font-size: 1.2em !important;
+}
+
+.cna {
+  height: 190px !important;
+}
+
+.navboxout {
+  *zoom: 1;
+}
+.navboxout:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+.navboxout > * {
+  float: left;
+  display: inline-block;
+}
+.navboxout img {
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+.icon-language {
+  width: 95px;
+}
+.icon-language:before {
+  margin-top: -2px;
+}
+
+.Raleway {
+  font-family: 'Raleway', "gotham", "微軟正黑體", Monaco, "Microsoft JhengHei" !important;
+}
+.Raleway[class^="icon-"], .Raleway[class*=" icon-"] {
+  font-family: 'icomoon', 'Raleway', "gotham", "微軟正黑體", Monaco, "Microsoft JhengHei" !important;
 }
