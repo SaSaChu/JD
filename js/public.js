@@ -47,7 +47,7 @@ $(function () {
   // service下拉動畫
   $('.serviceboxs._s').each (function () {
     var $that = $(this);
-    $that.get (0).ori_h = $that.height () + 31 * 2;
+    $that.get (0).ori_h = $that.data ('ori') + 70;
     $that.get (0).sh_h = $that.data ('add') + 70;
     $that.find ('.sc_detail').removeClass ('B');
 
@@ -65,7 +65,9 @@ $(function () {
         }).animate ({
           'height': $that.get (0).sh_h
         });
-
+        setTimeout (function () {
+          $('body').animate ({ scrollTop: $that.offset ().top - 20}, 1000, 'easeOutBack');
+        }, 500);
       }
     });
   });
@@ -120,6 +122,9 @@ $(function () {
           'height': $that.get (0).sh_h
         });
 
+        setTimeout (function () {
+          $('body').animate ({ scrollTop: $that.offset ().top - 20}, 1000, 'easeOutBack');
+        }, 500);
       }
     });
   });

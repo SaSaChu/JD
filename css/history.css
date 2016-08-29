@@ -54,6 +54,7 @@ html body .outbox .middle.cbg {
 .centbox {
   position: relative;
   padding: 0 80px;
+  width: 1075px;
   *zoom: 1;
 }
 .centbox:after {
@@ -167,4 +168,8 @@ html body .outbox .middle.cbg {
   content: '>';
   left: 0;
   right: auto;
+}
+
+.s1 img {
+  height: 205px;
 }

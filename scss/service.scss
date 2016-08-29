@@ -113,6 +113,7 @@
 
       .sc_a03 {
         display: inline-block;
+        width: 33%;
         margin: 0;
         padding: 0;
         font-size: 2em;
@@ -193,7 +194,7 @@
         font-size: 2em;
 
         cursor: pointer;
-        color: white;
+        color: rgba(182, 204, 49, 1.00);
 
         &:hover {
           color: rgba(163, 192, 20, 1.00);

@@ -12,6 +12,7 @@ html body .outbox .middle.cbg {
 .centbox {
   position: relative;
   padding: 0 80px;
+  width: 1075px;
   @include clearfix();
 
   &:before {
@@ -124,5 +125,10 @@ html body .outbox .middle.cbg {
         }
       }
     }
+  }
+}
+.s1 {
+  img {
+    height: 205px;
   }
 }
