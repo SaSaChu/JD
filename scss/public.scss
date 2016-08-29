@@ -107,14 +107,16 @@ html {
         text-align: right;
         font-weight: bolder;
 
-        &:before {
+        @include clearfix();
+        * {
           display: inline-block;
-          text-decoration: none;
-          color: rgba(163, 192, 20, 1.00);
-          padding-right: 8px;
-          font-size: 1.3em;
+          float: right;
         }
 
+        img {
+          margin-top: 13px;
+          margin-right: 2px;
+        }
         &:hover {
           text-decoration: underline;
           color: rgba(163, 192, 20, 1.00);
@@ -402,7 +404,7 @@ html {
             height: 100%;
             @include transition(left .3s);
             > h2 {
-              font-weight: bold;
+              font-weight: bolder;
             }
             > .img, > a, > h2, > p {
               position: absolute;
@@ -412,7 +414,7 @@ html {
               width: 100%;
               height: 100%;
               color: rgba(255, 255, 255, 1.00);
-              @include text-shadow(0 0 1px rgba(39, 40, 34, .10));
+              // @include text-shadow(0 0 1px rgba(39, 40, 34, .10));
             }
             > .img {
               img {
@@ -860,4 +862,31 @@ html {
 }
 .cna {
   height: 190px !important;
+}
+
+.navboxout {
+  @include clearfix();
+  > * {
+    float: left;
+    display: inline-block;
+  }
+  img {
+    margin-top: 3px;
+    margin-right: 10px;
+  }
+}
+.icon-language {
+  width: 95px;
+  &:before {
+    margin-top: -2px;
+  }
+}
+
+
+.Raleway {
+  font-family: 'Raleway', "gotham", "微軟正黑體", Monaco, "Microsoft JhengHei" !important;
+
+  &[class^="icon-"], &[class*=" icon-"] {
+    font-family: 'icomoon', 'Raleway', "gotham", "微軟正黑體", Monaco, "Microsoft JhengHei" !important;
+  }
 }

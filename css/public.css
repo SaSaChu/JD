@@ -167,13 +167,21 @@ html body #navbox .x {
   cursor: pointer;
   text-align: right;
   font-weight: bolder;
+  *zoom: 1;
 }
-html body #navbox .x:before {
+html body #navbox .x:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+html body #navbox .x * {
   display: inline-block;
-  text-decoration: none;
-  color: #a3c014;
-  padding-right: 8px;
-  font-size: 1.3em;
+  float: right;
+}
+html body #navbox .x img {
+  margin-top: 13px;
+  margin-right: 2px;
 }
 html body #navbox .x:hover {
   text-decoration: underline;
@@ -782,7 +790,7 @@ html body .outbox .middle .banners .banner {
   transition: left 0.3s;
 }
 html body .outbox .middle .banners .banner > h2 {
-  font-weight: bold;
+  font-weight: bolder;
 }
 html body .outbox .middle .banners .banner > .img, html body .outbox .middle .banners .banner > a, html body .outbox .middle .banners .banner > h2, html body .outbox .middle .banners .banner > p {
   position: absolute;
@@ -792,7 +800,6 @@ html body .outbox .middle .banners .banner > .img, html body .outbox .middle .ba
   width: 100%;
   height: 100%;
   color: white;
-  text-shadow: 0 0 1px rgba(39, 40, 34, 0.1);
 }
 html body .outbox .middle .banners .banner > .img img {
   width: 100%;
@@ -1216,4 +1223,36 @@ html body .outbox footer p {
 
 .cna {
   height: 190px !important;
+}
+
+.navboxout {
+  *zoom: 1;
+}
+.navboxout:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+.navboxout > * {
+  float: left;
+  display: inline-block;
+}
+.navboxout img {
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+.icon-language {
+  width: 95px;
+}
+.icon-language:before {
+  margin-top: -2px;
+}
+
+.Raleway {
+  font-family: 'Raleway', "gotham", "微軟正黑體", Monaco, "Microsoft JhengHei" !important;
+}
+.Raleway[class^="icon-"], .Raleway[class*=" icon-"] {
+  font-family: 'icomoon', 'Raleway', "gotham", "微軟正黑體", Monaco, "Microsoft JhengHei" !important;
 }

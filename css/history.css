@@ -66,9 +66,9 @@ html body .outbox .middle.cbg {
 .centbox:before {
   content: '';
   position: absolute;
-  top: 48px;
+  top: 20px;
   left: calc(50% - 2px / 2);
-  height: calc(100% - 48px - 70px);
+  height: calc(100% - 20px - 70px);
   display: inline-block;
   width: 2px;
   background-color: white;
@@ -172,4 +172,8 @@ html body .outbox .middle.cbg {
 
 .s1 img {
   height: 205px;
+}
+
+.centbox.cn .left .box p:before, .centbox.cn .right .box p:before {
+  top: 0;
 }
