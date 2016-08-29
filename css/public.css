@@ -1210,3 +1210,10 @@ html body .outbox footer p {
     width: 1200px;
   }
 }
+.cnx {
+  font-size: 1.2em !important;
+}
+
+.cna {
+  height: 190px !important;
+}
