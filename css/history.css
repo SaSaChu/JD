@@ -135,6 +135,7 @@ html body .outbox .middle.cbg {
   padding-right: 35px;
   line-height: 1.4em;
   font-size: .8em;
+  font-weight: bolder;
 }
 .centbox .left .box p:before, .centbox .right .box p:before {
   content: '<';
