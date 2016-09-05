@@ -66,7 +66,7 @@ $(function () {
           'height': $that.get (0).sh_h
         });
         setTimeout (function () {
-          $('body').animate ({ scrollTop: $that.offset ().top - 20}, 1000, 'easeOutBack');
+          $('body').animate ({ scrollTop: $that.offset ().top - 20}, 1000, 'easeInOutCubic');
         }, 500);
       }
     });
