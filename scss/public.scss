@@ -102,7 +102,7 @@ html {
       .x {
         display: inline-block;
         width: 100%;
-        padding: 105px 46px 45px;
+        padding: 89px 46px 32px;
         cursor: pointer;
         text-align: right;
         font-weight: bolder;
@@ -634,7 +634,7 @@ html {
           padding: 32px 70px 7px 70px;
           background-color: rgba(175, 198, 44, 1.00);
 
-          @include split-left(53%, '.fgl', '.fgr');
+          @include split-left(51%, '.fgl', '.fgr');
 
           .fgl {
 
@@ -648,7 +648,7 @@ html {
 
               .fblack {
                 margin: 0;
-                padding: 0;
+                padding: 7px 0 10px 0;
                 font-size: 10pt;
                 font-weight: bolder;
                 color: rgba(51, 58, 59, 1.00);
@@ -884,9 +884,9 @@ html {
 
 
 .Raleway {
-  font-family: 'Raleway', "gotham", "微軟正黑體", Monaco, "Microsoft JhengHei" !important;
+  font-family: 'Raleway', "微軟正黑體", Monaco, "Microsoft JhengHei" !important;
 
   &[class^="icon-"], &[class*=" icon-"] {
-    font-family: 'icomoon', 'Raleway', "gotham", "微軟正黑體", Monaco, "Microsoft JhengHei" !important;
+    font-family: 'icomoon', 'Raleway', "Arial", "微軟正黑體", Monaco, "Microsoft JhengHei" !important;
   }
 }

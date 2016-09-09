@@ -163,7 +163,7 @@ html body #navbox.sn {
 html body #navbox .x {
   display: inline-block;
   width: 100%;
-  padding: 105px 46px 45px;
+  padding: 89px 46px 32px;
   cursor: pointer;
   text-align: right;
   font-weight: bolder;
@@ -997,10 +997,10 @@ html body .outbox footer .fgreen .fgr {
   float: right;
 }
 html body .outbox footer .fgreen .fgl {
-  width: 53%;
+  width: 51%;
 }
 html body .outbox footer .fgreen .fgr {
-  width: calc(100% - 53%);
+  width: calc(100% - 51%);
 }
 html body .outbox footer .fgreen .fgl > div {
   float: left;
@@ -1012,7 +1012,7 @@ html body .outbox footer .fgreen .fgl > div:nth-child(n+3) {
 }
 html body .outbox footer .fgreen .fgl > div .fblack {
   margin: 0;
-  padding: 0;
+  padding: 7px 0 10px 0;
   font-size: 10pt;
   font-weight: bolder;
   color: #333a3b;
@@ -1251,8 +1251,8 @@ html body .outbox footer p {
 }
 
 .Raleway {
-  font-family: 'Raleway', "gotham", "微軟正黑體", Monaco, "Microsoft JhengHei" !important;
+  font-family: 'Raleway', "微軟正黑體", Monaco, "Microsoft JhengHei" !important;
 }
 .Raleway[class^="icon-"], .Raleway[class*=" icon-"] {
-  font-family: 'icomoon', 'Raleway', "gotham", "微軟正黑體", Monaco, "Microsoft JhengHei" !important;
+  font-family: 'icomoon', 'Raleway', "Arial", "微軟正黑體", Monaco, "Microsoft JhengHei" !important;
 }
