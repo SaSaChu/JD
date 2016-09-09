@@ -1,0 +1,218 @@
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+.centbox.npadding {
+  padding: 0;
+}
+.centbox .serviceboxs {
+  display: inline-block;
+  width: 800px;
+  border: 1px solid white;
+  padding: 15px;
+  margin-bottom: 22px;
+}
+.centbox .serviceboxs .case_detail {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+}
+.centbox .serviceboxs .case_detail.casebg01 {
+  height: 235px;
+  background-image: url(../img/305195807.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  -moz-background-size: cover;
+}
+.centbox .serviceboxs .case_detail.casebg01.casebg02 {
+  height: 235px;
+  background-image: url(../img/c_cover_02.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  -moz-background-size: cover;
+}
+.centbox .serviceboxs .case_detail.casebg01:hover {
+  position: relative;
+}
+.centbox .serviceboxs .case_detail.casebg01:hover:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(25, 33, 34, 0.8);
+}
+.centbox .serviceboxs .case_detail.casebg01:hover .case_a01, .centbox .serviceboxs .case_detail.casebg01:hover .case_a02, .centbox .serviceboxs .case_detail.casebg01:hover .case_a03 {
+  position: relative;
+  display: inline-block;
+  z-index: 5;
+}
+.centbox .serviceboxs .case_detail .case_a01, .centbox .serviceboxs .case_detail .case_a02, .centbox .serviceboxs .case_detail .case_a03, .centbox .serviceboxs .case_detail .icon-chevron-thin-down {
+  display: none;
+}
+.centbox .serviceboxs .case_detail.C .case_b01, .centbox .serviceboxs .case_detail.C .case_b02, .centbox .serviceboxs .case_detail.C .case_b03, .centbox .serviceboxs .case_detail.C .case_b04, .centbox .serviceboxs .case_detail.C .case_b05, .centbox .serviceboxs .case_detail.C .case_b06 {
+  display: none;
+}
+.centbox .serviceboxs .case_detail.D {
+  padding: 35px 35px 0 35px;
+  background-color: rgba(25, 33, 34, 0.8);
+}
+.centbox .serviceboxs .case_detail.D .case_a01, .centbox .serviceboxs .case_detail.D .case_a02, .centbox .serviceboxs .case_detail.D .case_a03 {
+  display: none;
+}
+.centbox .serviceboxs .case_detail.D .case_b01, .centbox .serviceboxs .case_detail.D .case_b02, .centbox .serviceboxs .case_detail.D .case_b03, .centbox .serviceboxs .case_detail.D .case_b04, .centbox .serviceboxs .case_detail.D .case_b05, .centbox .serviceboxs .case_detail.D .case_b06 {
+  display: inline-block;
+}
+.centbox .serviceboxs .case_detail .case_a01 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  font-size: 2.5em;
+}
+.centbox .serviceboxs .case_detail .case_a01:hover {
+  color: #a3c014;
+}
+.centbox .serviceboxs .case_detail .case_a01 {
+  font-weight: bolder;
+  padding: 40px 0 15px 0;
+}
+.centbox .serviceboxs .case_detail .case_a01.cn_casea01 {
+  padding: 60px 0 15px 0;
+  font-style: normal;
+}
+.centbox .serviceboxs .case_detail .case_a01:hover {
+  text-decoration: underline;
+}
+.centbox .serviceboxs .case_detail .case_a02 {
+  width: 100%;
+  margin: 0;
+  padding: 0 20px;
+  padding-bottom: 20px;
+  color: white;
+  line-height: 1.4em;
+}
+.centbox .serviceboxs .case_detail .case_a03 {
+  display: none;
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+}
+.centbox .serviceboxs .case_detail .case_a03:hover {
+  color: #a3c014;
+}
+.centbox .serviceboxs .case_detail .case_b01, .centbox .serviceboxs .case_detail .case_b02, .centbox .serviceboxs .case_detail .case_b03, .centbox .serviceboxs .case_detail .case_b04 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: white;
+}
+.centbox .serviceboxs .case_detail .case_b01 {
+  color: #a3c014;
+  font-weight: bolder;
+  font-size: 3em;
+  line-height: 1.6em;
+  padding-top: 15px;
+}
+.centbox .serviceboxs .case_detail .case_b02 {
+  width: 90%;
+  padding-bottom: 15px;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  color: #a3c014;
+}
+.centbox .serviceboxs .case_detail .case_b03 {
+  width: 90%;
+  line-height: 1.5em;
+  padding: 20px 0;
+  font-size: .8em;
+}
+.centbox .serviceboxs .case_detail .case_b03.nomal {
+  font-size: 1em;
+}
+.centbox .serviceboxs .case_detail .case_b03.cn_fontsize {
+  padding-top: 15px;
+  font-size: 16px;
+}
+.centbox .serviceboxs .case_detail .case_b04 {
+  text-decoration: underline;
+  font-size: 1em;
+  font-weight: bolder;
+  font-style: italic;
+  margin-top: 15px;
+}
+.centbox .serviceboxs .case_detail .case_b05 {
+  width: 90%;
+  height: 150px;
+  margin-bottom: 30px;
+}
+.centbox .serviceboxs .case_detail .case_b05 img {
+  max-width: 100%;
+  height: 100%;
+}
+.centbox .serviceboxs .case_detail .case_b06 {
+  display: inline-block;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 2em;
+  color: #adc62e;
+  width: 100%;
+  cursor: pointer;
+}
+.centbox .serviceboxs .case_detail .case_b06:hover {
+  color: #a3c014;
+}
+
+.f08 {
+  font-size: .8em !important;
+}

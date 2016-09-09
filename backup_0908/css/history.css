@@ -1,0 +1,179 @@
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+/**
+ * @author      ZEUS Design - http://www.zeusdesign.com.tw
+ * @copyright   Copyright (c) 2016 ZEUS Design
+ */
+html body .outbox .middle.cbg {
+  background-image: none;
+  background-color: #131b1e;
+}
+
+.centbox {
+  position: relative;
+  padding: 0 80px;
+  width: 1075px;
+  *zoom: 1;
+}
+.centbox:after {
+  display: table;
+  content: "";
+  line-height: 0;
+  clear: both;
+}
+.centbox:before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 2px / 2);
+  height: calc(100% - 20px - 70px);
+  display: inline-block;
+  width: 2px;
+  background-color: white;
+}
+.centbox .bottom {
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+  padding-top: 10px;
+}
+.centbox .bottom:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: calc(50% - 20px / 2);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 3px solid white;
+  background-color: #131b1e;
+}
+.centbox h3 {
+  color: #adc62e;
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 40px;
+}
+.centbox .left, .centbox .right {
+  float: left;
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  padding: 5px 30px;
+  padding-top: 50px;
+}
+.centbox .left .box, .centbox .right .box {
+  position: relative;
+}
+.centbox .left .box + .box, .centbox .right .box + .box {
+  margin-top: 50px;
+}
+.centbox .left .box:before, .centbox .right .box:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: calc(-30px - 20px / 2);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 3px solid white;
+  background-color: #131b1e;
+}
+.centbox .left .box p, .centbox .right .box p {
+  position: relative;
+  color: #fdfcfd;
+  padding-right: 35px;
+  line-height: 1.4em;
+  font-size: .8em;
+}
+.centbox .left .box p:before, .centbox .right .box p:before {
+  content: '<';
+  position: absolute;
+  right: 0;
+  top: 2px;
+  display: inline-block;
+  width: 20px;
+  font-size: 25px;
+}
+.centbox .left .box .img, .centbox .right .box .img {
+  border: 1px solid white;
+  padding: 15px;
+}
+.centbox .left .box .img img, .centbox .right .box .img img {
+  width: 100%;
+}
+.centbox .right {
+  text-align: left;
+  padding-top: 0;
+}
+.centbox .right .box:before {
+  left: calc(-30px - 20px / 2);
+  right: auto;
+}
+.centbox .right .box p {
+  padding-right: 0;
+  padding-left: 35px;
+}
+.centbox .right .box p:before {
+  content: '>';
+  left: 0;
+  right: auto;
+}
+
+.s1 img {
+  height: 205px;
+}
+
+.centbox.cn .left .box p:before, .centbox.cn .right .box p:before {
+  top: 0;
+}
