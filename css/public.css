@@ -893,7 +893,7 @@ html body .outbox .middle .services:after {
 }
 html body .outbox .middle .services > div {
   float: left;
-  width: calc(100% / 3 - 30px / 3);
+  width: calc((100% - 13px * 2)/ 3);
   padding: 8px;
   border: 1px solid #929697;
 }
