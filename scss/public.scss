@@ -9,7 +9,7 @@
 // @include font-face("gotham", font-files("gotham/gotham-book-webfont.eot", "gotham/gotham-book-webfont.svg", "gotham/gotham-book-webfont.ttf", "gotham/gotham-book-webfont.woff", "gotham/gotham-book-webfont.woff2"));
 @include font-face("icomoon", font-files("icomoon/icomoon.eot", "icomoon/icomoon.woff", "icomoon/icomoon.ttf", "icomoon/icomoon.svg"));
 [class^="icon-"], [class*=" icon-"] {
-  font-family: 'Arial', 'icomoon', "微軟正黑體", Monaco, "Microsoft JhengHei";
+  font-family: 'Open Sans', 'icomoon', "微軟正黑體", Monaco, "Microsoft JhengHei";
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -73,7 +73,7 @@ html {
     width: 100%;
     // height: 100%;
     // font-size: medium;
-    font-family:'Arial',"微軟正黑體", Monaco, "Microsoft JhengHei" ;
+    font-family:'Open Sans',"微軟正黑體", Monaco, "Microsoft JhengHei" ;
     background-color: rgba(255, 255, 255, 1.00);
     color: rgba(50, 50, 50, 0.8);
 
@@ -887,6 +887,6 @@ html {
   font-family: 'Raleway', "微軟正黑體", Monaco, "Microsoft JhengHei" !important;
 
   &[class^="icon-"], &[class*=" icon-"] {
-    font-family: 'icomoon', 'Raleway', "Arial", "微軟正黑體", Monaco, "Microsoft JhengHei" !important;
+    font-family: 'icomoon', 'Raleway', "Open Sans", "微軟正黑體", Monaco, "Microsoft JhengHei" !important;
   }
 }
