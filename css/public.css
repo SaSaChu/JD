@@ -1125,11 +1125,18 @@ html body .outbox footer .fgreen .fgr .fl03 .con02 .comm {
 html body .outbox footer .fgreen .fgr .fl03 .con02 .comm:hover {
   color: #32393e;
 }
+html body .outbox footer .fgreen .fgr .fl03 .con02 .comm:before {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 38px;
+}
 html body .outbox footer .fgreen .fgr .fl03 .con02 img {
   float: right;
   max-width: 100%;
   height: 100%;
   padding-left: 10px;
+  padding-top: 2px;
 }
 html body .outbox footer .fgreen .fgr .fl04 {
   display: inline-block;
