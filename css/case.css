@@ -59,7 +59,6 @@
 .centbox .serviceboxs .case_detail {
   display: inline-block;
   width: 100%;
-  cursor: pointer;
 }
 .centbox .serviceboxs .case_detail.casebg01 {
   height: 235px;
