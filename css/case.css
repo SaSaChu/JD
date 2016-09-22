@@ -138,6 +138,7 @@
   padding-bottom: 20px;
   color: white;
   line-height: 1.4em;
+  font-size: 1.2em;
 }
 .centbox .serviceboxs .case_detail .case_a03 {
   display: none;
@@ -186,7 +187,7 @@
 .centbox .serviceboxs .case_detail .case_b04 {
   text-decoration: underline;
   font-size: 1em;
-  font-weight: bolder;
+  font-weight: 800;
   font-style: italic;
   margin-top: 15px;
 }

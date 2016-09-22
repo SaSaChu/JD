@@ -82,7 +82,7 @@
 
 .buttombox {
   display: inline-block;
-  width: 57%;
+  width: 60%;
   margin: 20px 0;
 }
 .buttombox .ba {
@@ -141,7 +141,7 @@
 }
 .centbox.clinet_pt {
   width: 1000px;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 0;
 }
 .centbox .peopbox {
@@ -173,18 +173,18 @@
   display: inline-block;
   font-size: 1.8em;
   font-weight: bolder;
-  padding-top: 25px;
+  padding-top: 15px;
 }
 .centbox .peopbox .jobtitle {
   display: inline-block;
   font-size: 1.2em;
-  padding-top: 15px;
+  padding-top: 5px;
 }
 .centbox .peopbox .present {
   display: inline-block;
   font-size: 1em;
   line-height: 1.5em;
-  padding-top: 35px;
+  padding-top: 30px;
 }
 .centbox .peopbox:first-child {
   float: left;

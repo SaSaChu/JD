@@ -102,7 +102,7 @@ html {
       .x {
         display: inline-block;
         width: 100%;
-        padding: 89px 46px 32px;
+        padding: 92px 46px 32px;
         cursor: pointer;
         text-align: right;
         font-weight: bolder;
@@ -214,6 +214,7 @@ html {
             &:before {
               float: left;
               font-size: 2em;
+              margin-top: 1px;
               padding-right: 10px;
               color: rgba(163, 192, 20, 1.00);
             }
@@ -224,7 +225,7 @@ html {
 
             p {
               font-weight: bolder;
-              padding-top: 6px;
+              padding-top: 3px;
               float: left;
               margin: 0;
               display: inline-block;
@@ -556,31 +557,47 @@ html {
 
               a {
                 cursor: pointer;
-                font-size: 1.4em;
+                font-size: 1.2em;
                 font-weight: bolder;
                 text-align: left;
                 text-decoration: none;
                 color: rgba(50, 58, 62, 1.00);
+
                 &:hover {
                   color: rgba(175, 198, 44, 1.00);
                 }
+
+                &.cn-stitle {
+                  display: inline-block;
+                  width: 100%;
+                  font-size:1.3em;
+                  padding-bottom: 0;
+                }
+
+                &.cn-stitle_en {
+                  display: inline-block;
+                  width: 100%;
+                  font-size: .9em;
+                  padding-top: 0;
+                  font-weight: 400;
+                }
               }
-              &.cn-stitle {
+
+
+              &.nost {
+                padding-top: 15px;
                 padding-bottom: 0;
               }
 
-              &.cn-stitle_en {
-                font-size: .9em;
-                padding-top: 10px;
-                font-weight: thin;
+               &.nost2 {
+                padding-top: 0;
               }
-
 
 
             }
 
             .sread {
-              padding-bottom: 10px;
+              padding-bottom: 5px;
 
               a {
                 cursor: pointer;
@@ -622,7 +639,7 @@ html {
             content: '^';
             display: inline-block;
             width: 100%;
-            font-size: 40px;
+            font-size: 25px;
             height: 20px;
             margin-bottom: 5px;
             color: rgba(255, 255, 254, 1.00);
@@ -654,23 +671,30 @@ html {
                 color: rgba(51, 58, 59, 1.00);
               }
 
-              .fwhite {
+              .footer_link {
                 display: inline-block;
                 width: 100%;
-                padding: 5px 0;
+                padding: 0;
+                margin-top: 0;
 
-                cursor: pointer;
-                text-align: left;
-                text-decoration: none;
-                font-size: 10pt;
+                .fwhite {
+                  display: inline-block;
+                  padding: 5px 0;
 
-                color: white;
+                  cursor: pointer;
+                  text-align: left;
+                  text-decoration: none;
+                  font-size: 10pt;
 
-                &:hover {
-                  color: rgba(51, 58, 59, 1.00);
-                  text-decoration: underline;
+                  color: white;
+
+                  &:hover {
+                    color: rgba(51, 58, 59, 1.00);
+                    text-decoration: underline;
+                  }
                 }
               }
+
             }
           }
 
