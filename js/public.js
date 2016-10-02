@@ -223,7 +223,12 @@ $(function () {
       $('#contact_name').val ('');
       $('#contact_mail').val ('');
       $('#contact_content').val ('');
+      $('#alert').addClass ('show');
     });
+  });
+
+  $('#alert .close').click (function () {
+    $('#alert').removeClass ('show');
   });
 
 });
