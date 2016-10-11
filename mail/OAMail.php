@@ -65,11 +65,6 @@ class OAMail extends PHPMailer {
     return $this;
   }
 
-  public function setFrom ($address, $name = '') {
-    parent::setFrom ($address, $name);
-    return $this;
-  }
-
   public static function create () {
     return new self ();
   }

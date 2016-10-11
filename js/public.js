@@ -8,7 +8,7 @@ $(function () {
    $('.banners .img, .spb, .peopimg, .sc_cel, .case_b05').imgLiquid ({verticalAlign: 'center'});
 
    // 右邊menu
-   $('.navboxout, #navbox .x').click(function() {
+   $('.navboxout, #navbox .x,#cover').click(function() {
      $('#navbox').toggleClass('sn');
      $('#cover').toggleClass('show');
    });
