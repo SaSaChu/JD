@@ -125,6 +125,7 @@ html {
       }
 
       .ncg {
+        cursor: pointer;
         display: inline-block;
         width: 100%;
         padding: 10px 35px;
@@ -133,6 +134,13 @@ html {
         text-align: left;
         color: rgba(58, 67, 70, 1.00);
         font-weight: bolder;
+        text-decoration: none;
+
+        &:hover {}
+
+        &.an {
+          cursor: auto;
+        }
       }
 
       .ncw {
