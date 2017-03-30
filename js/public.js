@@ -188,7 +188,7 @@ $(function () {
     if (!content.length) return false;
 
     $.ajax ({
-      url: 'mail/a.php',
+      url: $(that).data ('url'),
       data: {
         content: content,
       },
@@ -208,7 +208,7 @@ $(function () {
     if (!name.length && !mail.length && !content.length) return false;
 
     $.ajax ({
-      url: 'mail/b.php',
+      url: $(this).data ('url'),
       data: {
         name: name,
         mail: mail,

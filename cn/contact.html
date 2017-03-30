@@ -94,7 +94,7 @@
                 <textarea id='contact_content' class='inputbox02' type="text" placeholder="WHAT CAN WE DO FOR YOU?" ></textarea>
             </div>
             <div class='sendbox'>
-              <button id='contact_send' class='sendbtn'>寄出</button>
+              <button id='contact_send' class='sendbtn' data-url='../mail/b.php'>寄出</button>
             </div>
           </div>
 
@@ -160,7 +160,7 @@
             <div class='fl04'>
               <div class='fl041'>
                 <input class='i' id='send_content' type="text" placeholder="LEAVE YOUR EMAIL FOR RECEIVING UPDATES" ></input>
-                <button class='b' id='send_btn'>SEND</button>
+                <button class='b' id='send_btn' data-url='../mail/a.php'>SEND</button>
               </div>
             </div>
 
@@ -169,6 +169,11 @@
         <p>Copyright © 2016 Jendong, Inc. All rights reserved.</p>
       </footer>
 
+    </div>
+    <div id='alert'>
+      <div class='cover'></div>
+      <div class='content'>SENT SUCCESSFULLY!</div>
+      <div class='close icon-forbid'></div>
     </div>
 
 
